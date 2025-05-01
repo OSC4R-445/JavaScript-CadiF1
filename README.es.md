@@ -27,12 +27,12 @@ Organizar las prácticas por nivel y asignación para mantener el código limpio
 
 ## ✅ Estado actual
 
-| Nivel | Asignación 1 | Asignación 2 | Asignación 3 | Asignación 4 |
-|-------|--------------|--------------|--------------|--------------|
-| lvl-1 | ☐            | ☐            | ☐            | ☐            |
-| lvl-2 | ☐            | ☐            | ☐            | ☐            |
-| lvl-3 | ☐            | ☐            | ☐            | ☐            |
-| lvl-4 | ☐            | ☐            | ☐            | ☐            |
+| Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
+|-------|---------------|---------------|---------------|---------------|
+| lvl-1 | ✅            | ✅            | ✅            | ✅            |
+| lvl-2 | ✅            | ✅            | ✅            | ✅            |
+| lvl-3 | ✅            | ✅            | ✅            | ✅            |
+| lvl-4 | ✅            | ✅            | ☐             | ☐             |
 
 (Actualiza los íconos a ✅ conforme completes cada asignación.)
 
