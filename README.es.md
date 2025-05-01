@@ -34,7 +34,6 @@ Organizar las prácticas por nivel y asignación para mantener el código limpio
 | lvl-3 | ✅            | ✅            | ✅            | ✅            |
 | lvl-4 | ✅            | ✅            | ☐             | ☐             |
 
-(Actualiza los íconos a ✅ conforme completes cada asignación.)
 
 ---
 
