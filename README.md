@@ -1,3 +1,2 @@
 # javaScript-CadiF1
-
-# Learning the basics with JS
+## Learning the basics in web dev with JS, CadiF1 Course
