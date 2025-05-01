@@ -2,5 +2,5 @@
 
 🌐 Choose your language / Elige tu idioma:
 
-- 🇬🇧 [English](README.en.md)
-- 🇪🇸 [Español](README.es.md)
+- [English (EN)](README.en.md)
+- [Español (ES)](README.es.md)
