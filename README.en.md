@@ -29,12 +29,11 @@ Organize exercises by level and assignment to keep the codebase clean, accessibl
 
 | Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
 |-------|---------------|---------------|---------------|---------------|
-| lvl-1 | ☐             | ☐             | ☐             | ☐             |
-| lvl-2 | ☐             | ☐             | ☐             | ☐             |
-| lvl-3 | ☐             | ☐             | ☐             | ☐             |
-| lvl-4 | ☐             | ☐             | ☐             | ☐             |
+| lvl-1 | ✅            | ✅            | ✅            | ✅            |
+| lvl-2 | ✅            | ✅            | ✅            | ✅            |
+| lvl-3 | ✅            | ✅            | ✅            | ✅            |
+| lvl-4 | ✅            | ✅            | ☐             | ☐             |
 
-(Update checkboxes to ✅ as you complete each assignment.)
 
 ---
 
