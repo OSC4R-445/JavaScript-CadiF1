@@ -1,52 +1,38 @@
-# JavaScript Practice Repository
+# 📚 Assignment 4 - Level 3: jQuery Dynamic Interactions
 
-This repository contains my structured progress across 4 levels of difficulty. Each level includes 4 assignments designed to strengthen practical JavaScript skills.
+This assignment involves applying dynamic effects to an HTML template using jQuery. The implemented requirements are detailed below.
 
----
+## 📁 Main File
 
-## 🌟 Repository Structure
+- [`assets/js/jQuery.js`](assets/js/jQuery.js): Contains all jQuery logic applied to the provided template.
 
-- **main**: Main branch of the repository.
-- **lvl-1 to lvl-4**: Base branches for each difficulty level.
-- **lvl-X_assign-Y**: Child branches for each specific assignment.
+## ✅ Implemented Requirements
 
-### 📁 Example branch naming:
-- `lvl-1` → Base branch for Level 1
-  - `lvl-1_assign-1` → First assignment of Level 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Base branch for Level 2
-  - `lvl-2_assign-1`, etc.
+1. **Top Categories**  
+   When clicking on any item in this section, its thumbnail image (`.thumb`) is emptied using the `.empty()` method.
 
----
+2. **Most Played**  
+   When clicking on any item in this section, the element fades out using `.fadeOut()`.
 
-## 🧠 Purpose
+3. **Trending Games**  
+   - Clicking anywhere on the article (except the wallet button) slides the price (`.price`) up using `.slideUp()`.
+   - Clicking the wallet button changes the article's background to green and slides it up using chained `.css()` and `.slideUp(3000)`.
 
-Organize exercises by level and assignment to keep the codebase clean, accessible, and well-documented. This also helps with future reviews or contributions.
+4. **Top Features**  
+   Clicking these elements triggers an animation using `.animate()` to adopt the following properties:
+   - `width: 270px`
+   - `height: 270px`
+   - `top: -300px`
+   - `left: 300px`
+   - `position: relative` (added via `.css()` if not set properly by `.animate()`)
 
----
+## 🛠️ Tools Used
 
-## ✅ Current Status
-
-| Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
-|-------|---------------|---------------|---------------|---------------|
-| lvl-1 | ✅            | ✅            | ✅            | ✅            |
-| lvl-2 | ✅            | ✅            | ✅            | ✅            |
-| lvl-3 | ✅            | ✅            | ✅            | ✅            |
-| lvl-4 | ✅            | ✅            | ☐             | ☐             |
-
-
----
+- [jQuery](https://jquery.com/)
+- HTML / CSS from the project template
 
 ## 📌 Notes
 
-- Each assignment is documented with its own README inside its branch.
-- Branches are created from their respective level base (`lvl-X`) to maintain a clean workflow.
-
----
-
-## 🚀 How to Contribute
-
-1. Create a new branch from the appropriate level.
-2. Follow the naming convention: `lvl-X_assign-Y`.
-3. Upload your code and documentation.
-4. (Optional) Open a Pull Request if you'd like to merge it into the level base branch.
+- All effects are wrapped inside `$(document).ready(...)` to ensure they execute after the DOM is fully loaded.
+- Default link behaviors are prevented with `event.preventDefault()`.
+- Method chaining is used to create combined effects.
