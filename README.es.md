@@ -4,7 +4,7 @@ Esta asignación consiste en aplicar efectos dinámicos a una plantilla HTML uti
 
 ## 📁 Archivo principal
 
-- [`assets/js/jQuery.js`](assets/js/): Contiene toda la lógica jQuery aplicada sobre la plantilla proporcionada.
+- [`Desaf4-js3/assets/js/jQuery.js`](assets/js/jQuery.js): Contiene toda la lógica jQuery aplicada sobre la plantilla proporcionada.
 
 ## ✅ Requisitos implementados
 
