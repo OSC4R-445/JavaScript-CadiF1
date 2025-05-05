@@ -29,10 +29,12 @@ Organizar los ejercicios por nivel y asignación para mantener el código limpio
 
 | Nivel | Asignación 1 | Asignación 2 | Asignación 3 | Asignación 4 |
 |-------|---------------|---------------|---------------|---------------|
-| lvl-1 | ✅             | ✅             | ✅            | ✅            |
-| lvl-2 | ✅             | ✅             | ✅            | ✅            |
-| lvl-3 | ✅             | ✅             | ✅            | ✅            |
-| lvl-4 | ✅             | ✅             | ✅            | ✅            |
+| lvl-1 | ✅             | ✅             | ✅             | ✅             |
+| lvl-2 | ✅             | ✅             | ✅             | ✅             |
+| lvl-3 | ✅             | ✅             | ✅             | ✅             |
+| lvl-4 | ☐             | ☐             | ☐             | ☐             |
+
+(Actualiza los recuadros a ✅ a medida que completes cada asignación.)
 
 ---
 

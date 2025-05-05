@@ -32,7 +32,7 @@ Organize exercises by level and assignment to keep the codebase clean, accessibl
 | lvl-1 | ✅             | ✅             | ✅             | ✅             |
 | lvl-2 | ✅             | ✅             | ✅             | ✅             |
 | lvl-3 | ✅             | ✅             | ✅             | ✅             |
-| lvl-4 | ✅             | ✅             | ✅             | ✅             |
+| lvl-4 | ☐             | ☐             | ☐             | ☐             |
 
 ---
 
