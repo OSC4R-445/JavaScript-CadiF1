@@ -1,52 +1,38 @@
-# Repositorio de Prácticas JavaScript
+# 📚 Asignación 4 - Nivel 3: jQuery Interacciones Dinámicas
 
-Este repositorio contiene mi progreso estructurado en 4 niveles de dificultad. Cada nivel tiene 4 asignaciones diseñadas para desarrollar habilidades prácticas en JavaScript.
+Esta asignación consiste en aplicar efectos dinámicos a una plantilla HTML utilizando jQuery. A continuación se detallan los requisitos implementados.
 
----
+## 📁 Archivo principal
 
-## 🌟 Estructura del Repositorio
+- [`Desaf4-js3/assets/js/jQuery.js`](assets/js/jQuery.js): Contiene toda la lógica jQuery aplicada sobre la plantilla proporcionada.
 
-- **main**: Rama principal del repositorio.
-- **lvl-1 a lvl-4**: Ramas base por nivel de dificultad.
-- **lvl-X_assign-Y**: Ramas hijas para cada asignación individual.
+## ✅ Requisitos implementados
 
-### 📁 Ejemplo de nombres de ramas:
-- `lvl-1` → Rama base del Nivel 1
-  - `lvl-1_assign-1` → Primera asignación del Nivel 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Rama base del Nivel 2
-  - `lvl-2_assign-1`, etc.
+1. **Top Categories**  
+   Al hacer clic en cualquier elemento de esta sección, su imagen miniatura (`.thumb`) es vaciada utilizando el método `.empty()`.
 
----
+2. **Most Played**  
+   Al hacer clic sobre un juego de esta sección, el elemento desaparece con un efecto de desvanecimiento mediante `.fadeOut()`.
 
-## 🧠 Objetivo
+3. **Trending Games**  
+   - Al hacer clic en cualquier parte del artículo (excepto el botón de la cartera), el precio (`.price`) se desliza hacia arriba con `.slideUp()`.
+   - Al hacer clic en el botón de la cartera, el artículo cambia su fondo a color verde y se desliza hacia arriba encadenando `.css()` y `.slideUp(3000)`.
 
-Organizar las prácticas por nivel y asignación para mantener el código limpio, accesible y bien documentado. Esto también facilita futuras revisiones o contribuciones.
+4. **Características Superiores (Features)**  
+   Al hacer clic en estos elementos, se animan con `.animate()` para adoptar las siguientes propiedades:
+   - `width: 270px`
+   - `height: 270px`
+   - `top: -300px`
+   - `left: 300px`
+   - `position: relative` (añadido con `.css()` para permitir la animación)
 
----
+## 🛠️ Herramientas utilizadas
 
-## ✅ Estado actual
-
-| Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
-|-------|---------------|---------------|---------------|---------------|
-| lvl-1 | ✅            | ✅            | ✅            | ✅            |
-| lvl-2 | ✅            | ✅            | ✅            | ✅            |
-| lvl-3 | ✅            | ✅            | ✅            | ✅            |
-| lvl-4 | ✅            | ✅            | ☐             | ☐             |
-
-
----
+- [jQuery](https://jquery.com/)
+- HTML / CSS proporcionado por la plantilla del proyecto
 
 ## 📌 Notas
 
-- Cada asignación está documentada con un README propio dentro de su rama.
-- Las ramas se crean a partir de su respectiva rama de nivel (`lvl-X`) para mantener un flujo de trabajo limpio.
-
----
-
-## 🚀 Cómo contribuir
-
-1. Crea una nueva rama desde el nivel correspondiente.
-2. Usa la convención: `lvl-X_assign-Y`.
-3. Sube tu código y documentación.
-4. (Opcional) Haz un Pull Request si deseas integrarlo a la rama base de nivel.
+- Todos los efectos están encapsulados dentro de `$(document).ready(...)` para asegurar su ejecución tras la carga del DOM.
+- Se previenen los comportamientos predeterminados de enlaces (`event.preventDefault()`).
+- Se usó `encadenamiento de métodos` para lograr efectos combinados.
