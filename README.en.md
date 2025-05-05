@@ -4,7 +4,7 @@ This assignment involves applying dynamic effects to an HTML template using jQue
 
 ## 📁 Main File
 
-- [`Desaf4-js3/assets/js/jQuery.js`](assets/js/jQuery.js): Contains all jQuery logic applied to the provided template.
+- [`Desaf4-js3/assets/js/jQuery.js`](Desaf4-js3/assets/js/): Contains all jQuery logic applied to the provided template.
 
 ## ✅ Implemented Requirements
 
