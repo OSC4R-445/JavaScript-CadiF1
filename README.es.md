@@ -2,11 +2,13 @@
 
 Esta asignación consiste en aplicar efectos dinámicos a una plantilla HTML utilizando jQuery. A continuación se detallan los requisitos implementados.
 
-## 📁 Archivo principal
+### 📁 Archivo principal
 
 - [`Desaf4-js3/assets/js/jQuery.js`](Desaf4-js3/assets/js/jQuery.js): Contiene toda la lógica jQuery aplicada sobre la plantilla proporcionada.
 
-## ✅ Requisitos implementados
+---
+
+### ✅ Requisitos implementados
 
 1. **Top Categories**  
    Al hacer clic en cualquier elemento de esta sección, su imagen miniatura (`.thumb`) es vaciada utilizando el método `.empty()`.
@@ -26,12 +28,16 @@ Esta asignación consiste en aplicar efectos dinámicos a una plantilla HTML uti
    - `left: 300px`
    - `position: relative` (añadido con `.css()` para permitir la animación)
 
-## 🛠️ Herramientas utilizadas
+---
+
+### 🛠️ Herramientas utilizadas
 
 - [jQuery](https://jquery.com/)
 - HTML / CSS proporcionado por la plantilla del proyecto
 
-## 📌 Notas
+---
+
+### 📌 Notas
 
 - Todos los efectos están encapsulados dentro de `$(document).ready(...)` para asegurar su ejecución tras la carga del DOM.
 - Se previenen los comportamientos predeterminados de enlaces (`event.preventDefault()`).
