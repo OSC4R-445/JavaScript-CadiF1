@@ -4,7 +4,19 @@ This repository contains my structured progress across 4 levels of difficulty. E
 
 ---
 
-## 🌟 Repository Structure
+### ✅ Current Status
+ 🔗 Here are the direct URLs to the base branches for each level and the specific assignment branches
+
+| Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
+|-------|---------------|---------------|---------------|---------------|
+| lvl-1 | ✅             | ✅             | ✅             | ✅             |
+| lvl-2 | ✅             | ✅             | ✅             | ✅             |
+| lvl-3 | ✅             | ✅             | ✅             | ✅             |
+| lvl-4 | ☐             | ☐             | ☐             | ☐             |
+
+---
+
+### 🌟 Repository Structure
 
 - **main**: Main branch of the repository.
 - **lvl-1 to lvl-4**: Base branches for each difficulty level.
@@ -19,20 +31,9 @@ This repository contains my structured progress across 4 levels of difficulty. E
 
 ---
 
-## 🧠 Purpose
+### 🧠 Purpose
 
 Organize exercises by level and assignment to keep the codebase clean, accessible, and well-documented. This also helps with future reviews or contributions.
-
----
-
-## ✅ Current Status
-
-| Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
-|-------|---------------|---------------|---------------|---------------|
-| lvl-1 | ✅             | ✅             | ✅             | ✅             |
-| lvl-2 | ✅             | ✅             | ✅             | ✅             |
-| lvl-3 | ✅             | ✅             | ✅             | ✅             |
-| lvl-4 | ☐             | ☐             | ☐             | ☐             |
 
 ---
 
