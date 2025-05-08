@@ -5,7 +5,7 @@ This repository contains my structured progress across 4 levels of difficulty. E
 ---
 
 ### ✅ Current Status
- 🔗 Here are the direct URLs to the base branches for each level and the specific assignment branches
+> 🔗 Here are the direct URLs to the base branches for each level and the specific assignment branches
 
 | Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
 |-------|---------------|---------------|---------------|---------------|
@@ -37,14 +37,14 @@ Organize exercises by level and assignment to keep the codebase clean, accessibl
 
 ---
 
-## 📌 Notes
+### 📌 Notes
 
 - Each assignment is documented with its own README inside its branch.
 - Branches are created from their respective level base (`lvl-X`) to maintain a clean workflow.
 
 ---
 
-## 🚀 How to Contribute
+### 🚀 How to Contribute
 
 1. Create a new branch from the appropriate level.
 2. Follow the naming convention: `lvl-X_assign-Y`.
