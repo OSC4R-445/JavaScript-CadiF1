@@ -6,14 +6,6 @@ This assignment covers fundamental topics about JavaScript, including its histor
 ## 📂 Main File
 - [`Desaf1-js1/index.html`](Desaf1-js1/index.html)
 
-## 📑 Table of Contents
-1. [History and Evolution of JavaScript](#history-and-evolution-of-javascript)
-2. [Core Features of JavaScript](#core-features-of-javascript)
-3. [Including JavaScript in HTML](#including-javascript-in-html)
-4. [Debugging with the Console](#debugging-with-the-console)
-5. [Variable Declaration and Data Types](#variable-declaration-and-data-types)
-6. [Additional Notes](#additional-notes)
-
 ---
 
 ### 📖 History and Evolution of JavaScript
