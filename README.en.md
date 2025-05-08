@@ -5,11 +5,11 @@ This repository contains my structured progress across 4 levels of difficulty. E
 ---
 
 ### ✅ Current Status
- 🔗 Here are the direct URLs to the base branches for each level and the specific assignment branches, aswell as each assignment
+ 🔗 Here are the direct URLs to the base branches for each level and the specific assignment branches
 
 | Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
 |-------|---------------|---------------|---------------|---------------|
-| lvl-1 | ✅             | ✅             | ✅             | ✅             |
+| [lvl-1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1/README.en.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-1/README.en.md)             | ✅             | ✅             | ✅             |
 | lvl-2 | ✅             | ✅             | ✅             | ✅             |
 | lvl-3 | ✅             | ✅             | ✅             | ✅             |
 | lvl-4 | ☐             | ☐             | ☐             | ☐             |
