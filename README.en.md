@@ -8,10 +8,10 @@ This branch contains the Level 1 JavaScript challenges, covering fundamental con
 
 | Assignment  | Description                                                                                   | Status |
 |------------|-----------------------------------------------------------------------------------------------|-------|
-| [Desaf1-js1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-1/README.es.md) | Introduction to JavaScript: history, features, and inclusion methods.         | ✅    |
-| [Desaf2-js1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-2/README.es.md) | Random data generation for movie ticket purchase, displaying results in alerts and console. | ✅    |
-| [Desaf3-js1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-3/README.es.md) | Vendor income calculation based on base salary, sales, and senior bonus.       | ✅    |
-| [Desaf4-js1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-4/README.es.md) | Pharmacy medicine registration with updatable prices and record verification. | ✅    |
+| [Desaf1-js1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-1/README.en.md) | Introduction to JavaScript: history, features, and inclusion methods.         | ✅    |
+| [Desaf2-js1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-2/README.en.md) | Random data generation for movie ticket purchase, displaying results in alerts and console. | ✅    |
+| [Desaf3-js1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-3/README.en.md) | Vendor income calculation based on base salary, sales, and senior bonus.       | ✅    |
+| [Desaf4-js1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-4/README.en.md) | Pharmacy medicine registration with updatable prices and record verification. | ✅    |
 
 ---
 
