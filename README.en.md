@@ -5,7 +5,7 @@ This repository contains my structured progress across 4 levels of difficulty. E
 ---
 
 ### ✅ Current Status
- 🔗 Here are the direct URLs to the base branches for each level and the specific assignment branches
+ 🔗 Here are the direct URLs to the base branches for each level and the specific assignment branches, aswell as each assignment
 
 | Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
 |-------|---------------|---------------|---------------|---------------|
