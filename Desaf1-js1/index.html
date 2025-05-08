@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header style="color: blue;"><h1>
+        Desafio 1
+    </h1></header>
+    <body>
+        <h2>Historia de JavaScript</h2>
+        <p>
+            JavaScript fue creado por Brendan Eich bajo la propuesta de la compañia Netscape en 1996, y en 1997 Fue adoptado como un estandar ECMA y en la actualidad va por el nombre oficial de ECNAScript (acompañado por el num de la version) Pero sigue siendo referido como JavaScript de todas maneras.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <h2>
+            3 versiones mas usadas de ECMAScript (resaltando su caracteristica  mas relevante)
+        </h2>
+        <p>
+            - ECMAScript 2015 (ES6): presenta mejoras respecto al lenguaje y nuevas variantes de programación. Añadio funciones flecha, interpolación de cadenas, let/const, parámetros de función por defecto.
+        </p>
+        <p>
+            - ECMAScript 2009 (ES5):  fue la primera version que fue muy extendida y compatible con muchos sistemas y navegadores. 
+        </p>
+        <p>
+            -ECMAScript 2017  (ES7): añadió async / await, y comprueba si un array contiene el valor pasado por parámetro. 
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+            <!-- sig pregunta -->
+        <h2>
+            Caracteristicas fundamentales de Javascript y su implementacion
+        </h2>
+        <p>
+            *Tipado debil: Esto permite que las variables puedan tener valores de diferentes tipos de datos durante su ejecución. 
+        </p>
+        <p>
+            -Se puede declarar una variable y asignarle un valor numérico, y luego cambiar su valor a una cadena de caracteres. 
+        </p>
+        <p>
+            -Se pueden realizar operaciones entre diferentes tipos de datos sin convertirlos explícitamente. 
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            *Orientacion a objetos: Esto permite agrupar datos y las acciones relacionadas con ellos en entidades llamadas clases.
+        </p>
+        <p>
+            -Se puede declarar una variable y asignarle un valor numérico, y luego cambiar su valor a una cadena de caracteres. 
+        </p>
+        <p>
+            -Se pueden realizar operaciones entre diferentes tipos de datos sin convertirlos explícitamente. 
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+
+        <p>
+            *Sensibilidad a mayúsculas y minúsculas: da la capacidad de distinguir entre letras en mayúscula y minúscula. Esto significa que en JavaScript, las palabras clave, los nombres de funciones, las variables y otros identificadores deben escribirse con mayúsculas y minúsculas. 
+        </p>
+        <p>
+            -Por ejemplo, la palabra clave "while" debe escribirse como "while", no como "While" o "WHILE". 
+        </p>
+        <p>
+            -La sensibilidad a mayúsculas y minúsculas se utiliza en: Contraseñas, Búsquedas, URLs, Nombres de archivos y directorios, además de lo que te puedas ingeniar.
+        </p>
+
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            *Importancia Bloques de codigo:  nos ayudan a organizar el código y a evitar repeticiones innecesarias. También permiten declarar variables cerca de donde se van a utilizar. 
+        </p>
+        <p>
+            -Los bloques de código pueden ser: Funciones, Objetos, For, If, While, Switch.
+        </p>
+        <p>
+            -Son útiles para: Controlar el flujo de ejecución del programa, Manejar errores, Agrupar sentencias. 
+        </p>
+        <p>
+            Delimitación: Los bloques de código se delimitan con llaves {}
+        </p>
+        <p>
+            Anidamiento: Los bloques de código se pueden anidar unos dentro de otros.
+        </p>
+        <p>
+            Alcance: Las variables declaradas dentro de un bloque de código tienen un alcance limitado a ese bloque. Esto significa que no se pueden acceder a ellas desde fuera del bloque.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        
+        <h2>
+            Metodos de Inclusion de Codio JavaScript en HTML
+        </h2>
+        <p>
+            Hay dos formas principales de incluir código JavaScript en un archivo HTML:
+        </p>
+        <p>
+            1.-Incrustar el código directamente en el HTML:
+        </p>
+        <p>
+            *Se utiliza la etiqueta &lt;script&gt; para insertar el código JavaScript dentro del HTML.
+        </p>
+        <p>
+            *Es útil para pequeñas porciones de código y para una carga inicial más rápida.
+        </p>
+        <p>
+            *Puede dificultar la organización y el mantenimiento del código en proyectos grandes.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            2.-Utilizar archivos JavaScript externos:
+        </p>
+        <p>
+            *Se crea un archivo separado con extensión .js para el código JavaScript.
+        </p>
+        <p>
+            *Se vincula el archivo JavaScript al HTML mediante la etiqueta &lt;script&gt; con el atributo src.
+        </p>
+        <p>
+            *Facilita la organización, reutilización y legibilidad del código.
+        </p>
+        <p>
+            *Los archivos JavaScript externos se pueden almacenar en caché para mejorar el rendimiento.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <h2>
+            Consola del navegador para la depuración
+        </h2>
+        <p>
+            El objeto console proporciona métodos útiles como log, warn y error para mostrar información, advertencias y errores en la consola.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            *console.log(): este metodo es el mas basico y se utiliza para mostrar información de textos, números, objetos y arrays y cualquier otro tipo de dato Javascript. Su sintaxis:
+        </p>
+        <p>
+            console.log(mensaje1, mensaje2, ...);
+        </p>
+        <p>
+            Puedes pasar uno o varios argumentos a console.log(). Cada argumento se mostrará en la consola, separados por espacios.
+        </p>
+        <p>Se usa sobretodo para ver valor de variables, mensajes de seguimiento o resultados de cálculos.</p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            *console.warn(): se utiliza para mostrar advertencias en la consola. Las advertencias suelen indicar situaciones donde haya posibles problemas en el código, como el uso de funciones obsoletas, variables no utilizadas o situaciones que podrían causar problemas en el futuro.. Su sintaxis:
+        </p>
+        <p>
+            console.warn(mensaje1, mensaje2, ...);
+        </p>
+        <p>
+            es similar a console.log(), puedes pasar uno o varios argumentos.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            *console.error(): se utiliza para mostrar errores en la consola. Los errores indican problemas graves en el código que impiden que el programa funcione correctamente. sintaxis:
+        </p>
+        <p>
+            console.error(mensaje1, mensaje2, ...);
+        </p>
+        <p>
+            La sintaxis es similar a los otros métodos.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            Utiliza console.log() para información general que sea útil para el desarrollador, console.warn() para advertencias sobre posibles problemas en el código y console.error() para errores que impiden que el programa funcione correctamente.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <h2>
+            Declaración de Variables y Tipos de Datos 
+        </h2>
+        <p>
+            tienes varias formas de declarar una variable:
+        </p>
+        <p>
+            1.-var
+        </p>
+        <p>
+            -Ámbito: El ámbito de las variables declaradas con var es global o local a la función en la que se declaran. Esto significa que se pueden acceder a ellas desde cualquier parte del código (si son globales) o desde cualquier punto dentro de la función (si son locales).
+        </p>
+        <p>
+            -Hoisting: Las variables declaradas con var se "elevan" (hoisting) al principio de su ámbito antes de que se ejecute el código. Esto significa que se pueden usar antes de su declaración real, pero su valor será undefined hasta que se les asigne un valor.
+        </p>
+        <p>
+            -Redeclaración: Puedes redeclarar una variable con var múltiples veces en el mismo ámbito sin que esto cause un error.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>2.-let</p>
+        <p>
+            -Ámbito: El ámbito de las variables declaradas con let es de bloque. Esto significa que solo son accesibles dentro del bloque de código (definido por llaves {}) en el que se declaran.
+        </p>
+        <p>
+            -Hoisting: Las variables declaradas con let también se elevan al principio de su ámbito, pero a diferencia de var, no se inicializan con undefined. Si intentas acceder a una variable let antes de su declaración, obtendrás un error de "referencia no inicializada".
+        </p>
+        <p>
+            -Redeclaración: No puedes redeclarar una variable con let en el mismo ámbito. Si lo intentas, obtendrás un error.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            3.-const
+        </p>
+        <p>
+            -Ámbito: El ámbito de las variables declaradas con const es de bloque, al igual que let.
+        </p>
+        <p>
+            -Hoisting: Las variables declaradas con const también se elevan al principio de su ámbito, pero no se inicializan con undefined.
+        </p>
+        <p>
+            -Redeclaración: No puedes redeclarar una variable con const en el mismo ámbito.
+        </p>
+        <p>
+            -Inmutabilidad: Las variables declaradas con const se consideran constantes. Esto significa que su valor no puede ser reasignado después de su inicialización. Sin embargo, si la variable const contiene un objeto o un array, los elementos dentro de ese objeto o array sí pueden ser modificados.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            *Diferencia entre variables y constantes en JavaScript:
+        </p>
+        <p>
+            -Variables:
+        </p>
+        <p>
+            Pueden cambiar su valor a lo largo de la ejecución del programa.
+        </p>
+        <p>
+            Se declaran utilizando las palabras clave let o var.
+        </p>
+        <p>
+            Su valor puede ser modificado cuantas veces sea necesario.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            -Constantes:
+        </p>
+        <p>
+            Su valor se asigna una vez y no puede ser modificado posteriormente.
+        </p>
+        <p>
+            Se declaran utilizando la palabra clave const.
+        </p>
+        <p>
+            Intentar reasignar un valor a una constante resultará en un error.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            *el tipo de dato de una variable puede cambiar durante la ejecución del programa. Esto se debe a que el tipo de dato se asocia al valor que se almacena en la variable, no a la variable en sí misma.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <h2>
+            Tipos de datos dinámicos en JavaScript
+        </h2>
+        <p>
+            JavaScript es un lenguaje de tipado dinámico, lo que significa que el tipo de dato de una variable puede cambiar durante la ejecución del programa. Esto se debe a que el tipo de dato se asocia al valor que se almacena en la variable, no a la variable en sí misma.
+        </p>
+        <p>
+            Ejemplo de codigo en JavaScript usando "nombre" como variable para imprimir un string y un number reemplazando su valor
+        </p>
+        <p>
+            let nombre = "Juan"; // nombre es de tipo string
+        </p>
+        <p>
+            console.log(typeof nombre); // Imprime "string"
+        </p>
+        <p>
+            nombre = 30; // nombre ahora es de tipo number
+        </p>
+        <p>
+            console.log(typeof nombre); // Imprime "number"
+        </p>
+        <p>
+            podemos observar cómo el tipo de dato de la variables nombre cambia a medida que se les asignan diferentes valores.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            *Uso de typeof: El operador typeof se utiliza para obtener el tipo de dato de una variable. Devuelve una cadena que representa el tipo de dato.
+
+        </p>
+        <p>
+            Ventajas del tipado dinámico:
+        </p>
+        <p>
+            -Flexibilidad: Permite que las variables almacenen diferentes tipos de datos en diferentes momentos, lo que facilita la adaptación a diversas situaciones.
+        </p>
+        <p>
+            -Desarrollo más rápido: No es necesario declarar explícitamente el tipo de dato de una variable, lo que agiliza el proceso de escritura del código.
+        </p>
+        <p>
+            Desventajas del tipado dinámico:
+        </p>
+        <p>
+            Posibles errores: Si no se tiene cuidado, el cambio inesperado del tipo de dato de una variable puede generar errores difíciles de depurar.
+        </p>
+        <p>
+            Menor rendimiento: El intérprete de JavaScript necesita realizar comprobaciones de tipo en tiempo de ejecución, lo que puede afectar ligeramente el rendimiento en comparación con lenguajes de tipado estático.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <h2>Ejemplos de codigo en JavaScript</h2>
+        <p>
+            ejemplo de usar el tipado debil para no tener que especificar el tipo de dato de una variable en codigo Javascript:
+        </p>
+        <p>
+            let variable = 10; // variable es de tipo número
+        </p>
+        <p>
+            console.log(variable); // muestra 10
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            variable = "hola"; // variable ahora es de tipo string
+        </p>
+        <p>
+            console.log(variable); // muestra "hola"
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            ejemplo de bloque de codigo:
+        </p>
+        <p>
+            // Bloque de código dentro de una función
+        </p>
+        <p>
+            function miFuncion() {
+            </p>
+            <p>
+                let nombre = "Juan"; // Variable local al bloque
+            </p>
+            <p>
+                let edad = 30; // Variable local al bloque
+            </p>
+            <p>
+                // Bloque de código dentro de un condicional
+            </p>
+            <p>
+                if (edad >= 18) {
+                </p>
+                <p>
+                    console.log(nombre + " es mayor de edad.");
+                </p>
+                <p>
+                } else {
+                </p>
+                <p>
+                    console.log(nombre + " es menor de edad.");
+                </p>
+                <p>
+                } 
+            </p>
+            <p>
+            }
+        </p>
+        <p>
+            miFuncion(); // Llamamos a la función para ejecutar el bloque de código
+        </p>
+        <p>
+            *Dentro de la función miFuncion(): Este bloque contiene la declaración de las variables nombre y edad, que son locales a la función. Esto significa que solo se pueden acceder a ellas dentro de la función.
+        </p>
+        <p>
+            *Dentro del condicional if: Este bloque se ejecuta si la condición edad >= 18 se cumple. En este caso, se muestra un mensaje en la consola indicando que la persona es mayor de edad.
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            ejemplo de los métodos para incluir código JavaScript en HTML
+        </p>
+        <p>
+            1. En línea (Inline):
+        </p>
+        <button onclick="alert('¡Hola!')">Haz clic aquí</button>
+        <p>
+            el codigo de la funcion de arriba:
+        </p>
+        <p>
+            &lt;button onclick="alert(&apos;¡Hola!&apos;)&gt; "Haz clic aquí &lt;/button&gt;
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            2. Interno (Internal)
+        </p>
+        <p>
+            El código JavaScript se coloca dentro de la etiqueta &lt;script> en la sección &lt;head> o &lt;body> del documento HTML:
+        </p>
+        <p>
+            &lt;script>
+        </p>
+        <p>
+            function saludar&#40;&#41; &#123;
+        </p>
+        <p>
+            console.log&#40;"¡Hola desde un script interno!"&#41;;
+        </p>
+        <p>
+            &#125;
+        </p>
+        <p>
+            &lt;/script>
+        </p>
+        <p style=" color: white;"> solo el modo oscuro ve esto jijiji</p>
+        <p>
+            3. Externo (External)
+        </p>
+        <p>
+            El código JavaScript se guarda en un archivo separado con extensión ".js".
+        </p>
+        <p>
+            Se utiliza la etiqueta &lt;script&gt; con el atributo "src" para enlazar el archivo JavaScript externo:
+        </p>
+        <p>
+            &lt;script src="script.js">&lt;/script>
+        </p>
+    </body>
+    <footer></footer>
+    
+</body>
+</html>
