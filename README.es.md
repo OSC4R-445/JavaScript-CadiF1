@@ -19,7 +19,7 @@ Este repositorio contiene mi progreso estructurado a través de 4 niveles de dif
 ### 🌟 Estructura del Repositorio
 
 - **main**: Rama principal del repositorio.
-- **lvl-1 a lvl-4**: Ramas base para cada nivel de dificultad.
+- **lvl-1 a lvl-4**: Ramas base para cada nivel de curso
 - **lvl-X_assign-Y**: Ramas hijas para cada asignación específica.
 
 ### 📁 Ejemplo de nomenclatura de ramas:
