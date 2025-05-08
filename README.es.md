@@ -34,7 +34,6 @@ Organizar los ejercicios por nivel y asignación para mantener el código limpio
 | lvl-3 | ✅             | ✅             | ✅             | ✅             |
 | lvl-4 | ☐             | ☐             | ☐             | ☐             |
 
-(Actualiza los recuadros a ✅ a medida que completes cada asignación.)
 
 ---
 
