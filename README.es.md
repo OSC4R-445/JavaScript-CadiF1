@@ -1,4 +1,4 @@
-# 📚 Asignación 3 - Nivel 1: Calculadora de Ingresos de Vendedores
+# 💼 Asignación 3 - Nivel 1: Calculadora de Ingresos de Vendedores
 
 ### 📂 Archivo Principal
 - [`Desaf3-js1/js/main.js`](Desaf3-js1/js/main.js)
