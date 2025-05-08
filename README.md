@@ -1,3 +1,6 @@
-# javaScript-CadiF1
-## Learning the basics in web dev with JS
->CadiF1 Javascript Course lvl 1 to lvl 4
+# 📘 JavaScript Practice Repository
+
+🌐 Choose your language / Elige tu idioma:
+
+- [English (EN)](README.en.md)
+- [Español (ES)](README.es.md)
