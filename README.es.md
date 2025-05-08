@@ -3,16 +3,8 @@
 
 Esta asignación cubre temas fundamentales sobre JavaScript, incluyendo su historia, características principales, métodos de inclusión en HTML, técnicas de depuración y declaración de variables.
 
-## 📂 Archivo Principal
+### 📂 Archivo Principal
 - [`Desaf1-js1/index.html`](Desaf1-js1/index.html)
-
-## 📑 Índice de Secciones
-1. [Historia y Evolución de JavaScript](#historia-y-evolucion-de-javascript)
-2. [Características Fundamentales de JavaScript](#caracteristicas-fundamentales-de-javascript)
-3. [Métodos de Inclusión en HTML](#metodos-de-inclusion-en-html)
-4. [Uso de la Consola para Depuración](#uso-de-la-consola-para-depuracion)
-5. [Declaración de Variables y Tipos de Datos](#declaracion-de-variables-y-tipos-de-datos)
-6. [Notas Adicionales](#notas-adicionales)
 
 ---
 
