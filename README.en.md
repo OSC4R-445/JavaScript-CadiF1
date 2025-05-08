@@ -6,7 +6,9 @@ This assignment involves applying dynamic effects to an HTML template using jQue
 
 - [`Desaf4-js3/assets/js/jQuery.js`](Desaf4-js3/assets/js/jQuery.js): Contains all jQuery logic applied to the provided template.
 
-## ✅ Implemented Requirements
+---
+
+### ✅ Implemented Requirements
 
 1. **Top Categories**  
    When clicking on any item in this section, its thumbnail image (`.thumb`) is emptied using the `.empty()` method.
@@ -28,10 +30,12 @@ This assignment involves applying dynamic effects to an HTML template using jQue
 
 ---
 
-## 🛠️ Tools Used
+### 🛠️ Tools Used
 
 - [jQuery](https://jquery.com/)
 - HTML / CSS from the project template
+
+---
 
 ## 📌 Notes
 
