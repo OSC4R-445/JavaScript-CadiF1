@@ -8,7 +8,7 @@ Esta rama contiene los desafíos del nivel 1 de JavaScript, donde se abordan con
 
 | Asignación | Descripción                                              | Estado |
 |-----------|----------------------------------------------------------|-------|
-| [Desaf1-js1](lvl-1_assign-1/README.es.md) | Introducción a JavaScript: historia, características y métodos de inclusión. | ✅    |
+| [Desaf1-js1](./lvl-1-assign-1/README.en.md) | Introducción a JavaScript: historia, características y métodos de inclusión. | ✅    |
 | [Desaf2-js1](./lvl-1_assign-2/README.es.md) | Generación de datos aleatorios para compra de boletos de cine.              | ✅    |
 | [Desaf3-js1](./lvl-1_assign-3/README.es.md) | Cálculo de ingresos de vendedores basado en ventas y bonos.                 | ✅    |
 | [Desaf4-js1](./lvl-1_assign-4/README.es.md) | Registro de medicamentos en una farmacia con precios actualizables.         | ✅    |
