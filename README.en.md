@@ -3,7 +3,7 @@
 
 This assignment covers fundamental topics about JavaScript, including its history, core features, ways to include JavaScript in HTML, debugging techniques, and variable declaration.
 
-## 📂 Main File
+### 📂 Main File
 - [`Desaf1-js1/index.html`](Desaf1-js1/index.html)
 
 ---
