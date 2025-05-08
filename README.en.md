@@ -37,7 +37,7 @@ This assignment involves applying dynamic effects to an HTML template using jQue
 
 ---
 
-## 📌 Notes
+### 📌 Notes
 
 - All effects are wrapped inside `$(document).ready(...)` to ensure they execute after the DOM is fully loaded.
 - Default link behaviors are prevented with `event.preventDefault()`.
