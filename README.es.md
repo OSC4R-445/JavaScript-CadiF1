@@ -32,7 +32,7 @@ Organizar las prácticas por nivel y asignación para mantener el código limpio
 | lvl-1 | ✅            | ✅            | ✅            | ✅            |
 | lvl-2 | ✅            | ✅            | ✅            | ✅            |
 | lvl-3 | ✅            | ✅            | ✅            | ✅            |
-| lvl-4 | ✅            | ✅            | ☐             | ☐             |
+| lvl-4 | ☐            | ☐            | ☐             | ☐             |
 
 
 ---
