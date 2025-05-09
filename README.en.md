@@ -1,54 +1,28 @@
-# JavaScript Practice Repository
+# 💼 Assignment 1 - Level 2: Article Quantity Manipulation
 
-This repository contains my structured progress across 4 levels of difficulty. Each level includes 4 assignments designed to strengthen practical JavaScript skills.
+### 📂 Main File
+- [`Desaf1-js2/script.js`](Desaf1-js2/script.js)
 
----
-
-### ✅ Current Status
-> 🔗 Here are the direct URLs to the base branches for each level and the specific assignment branches
-
-| Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
-|-------|---------------|---------------|---------------|---------------|
-| [lvl-1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1/README.en.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-1/README.en.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-2/README.en.md)             | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-3/README.en.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-4/README.en.md) |
-| lvl-2 | ✅             | ✅             | ✅             | ✅             |
-| lvl-3 | ✅             | ✅             | ✅             | ✅             |
-| lvl-4 | ☐             | ☐             | ☐             | ☐             |
+This project manages the addition and subtraction of article quantities using parallel arrays and interactive HTML elements.
 
 ---
 
-### 🌟 Repository Structure
-
-- **main**: Main branch of the repository.
-- **lvl-1 to lvl-4**: Base branches for each difficulty level.
-- **lvl-X_assign-Y**: Child branches for each specific assignment.
-
-### 📁 Example branch naming:
-- `lvl-1` → Base branch for Level 1
-  - `lvl-1_assign-1` → First assignment of Level 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Base branch for Level 2
-  - `lvl-2_assign-1`, etc.
-
----
-
-### 🧠 Purpose
-
-Organize exercises by level and assignment to keep the codebase clean, accessible, and well-documented. This also helps with future reviews or contributions.
+### Features Implemented
+1. Initializes two parallel arrays: one for article names and one for their quantities.
+   - `nombres = ["articulo1", "articulo2", "articulo3"]`
+   - `cantidades = [1, 5, 10]`
+2. Implements the function `adicionaOSustrae`:
+   - Takes the article name, quantity, and action (add or subtract) as parameters.
+   - Finds the correct index based on the name and performs the specified action.
+3. Uses a click event to trigger the function `realizarAccion`:
+   - Prompts the user for the article name and quantity.
+   - Calls the `adicionaOSustrae` function to update the quantity.
+4. Displays the list of articles and their quantities when clicking the parent div.
+   - Prevents event bubbling from child divs using `stopPropagation()`.
 
 ---
 
-### 📌 Notes
-
-- Each assignment is documented with its own README inside its branch.
-- Branches are created from their respective level base (`lvl-X`) to maintain a clean workflow.
-
----
-
-### 🚀 How to Contribute
-
-1. Create a new branch from the appropriate level.
-2. Follow the naming convention: `lvl-X_assign-Y`.
-3. Upload your code and documentation.
-4. (Optional) Open a Pull Request if you'd like to merge it into the level base branch.
-
----
+### 📝 Additional Notes
+- Uses event handling to differentiate between clicks on the parent and child divs.
+- Ensures data validation when entering names and quantities.
+- Uses `alert` to show the list of articles and their quantities.
