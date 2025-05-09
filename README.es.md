@@ -1,52 +1,37 @@
-# Repositorio de Práctica de JavaScript
+# 🎨 Asignación 2 - Nivel 2: Página Interactiva con Fondos Aleatorios y Ventana Emergente
 
-Este repositorio contiene mi progreso estructurado a través de 4 niveles de dificultad. Cada nivel incluye 4 asignaciones diseñadas para fortalecer las habilidades prácticas de JavaScript.
+### 📂 Archivos Principales
+- [`Desaf2-js2/JavaScript/upPagButton.js`](Desaf2-js2/JavaScript/upPagButton.js)
+- [`Desaf2-js2/JavaScript/bodyColorChange.js`](Desaf2-js2/JavaScript/bodyColorChange.js)
+- [`Desaf2-js2/JavaScript/newQuarterWindow.js`](Desaf2-js2/JavaScript/newQuarterWindow.js)
 
----
-
-### ✅ Estado Actual
-> 🔗 Aquí están las URLs directas a las ramas base de cada nivel y las ramas de las asignaciones específicas
-
-| Nivel | Asignación 1 | Asignación 2 | Asignación 3 | Asignación 4 |
-|-------|---------------|---------------|---------------|---------------|
-| [lvl-1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-1/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-2/README.es.md)             | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-3/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-4/README.es.md) |
-| lvl-2 | ✅             | ✅             | ✅             | ✅             |
-| lvl-3 | ✅             | ✅             | ✅             | ✅             |
-| lvl-4 | ☐             | ☐             | ☐             | ☐             |
+Este proyecto implementa características interactivas en una página web, incluyendo cambios aleatorios de fondo, desplazamiento hacia arriba y una ventana emergente para iniciar sesión.
 
 ---
 
-### 🌟 Estructura del Repositorio
+### Funcionalidad Implementada
+1. **Desplazamiento hacia Arriba:**
+   - Al hacer clic en el botón "Subir", se muestra una confirmación.
+   - Si se acepta, la página se desplaza suavemente hacia el inicio.
+   - Utiliza `window.scrollTo()` con desplazamiento suave.
 
-- **main**: Rama principal del repositorio.
-- **lvl-1 a lvl-4**: Ramas base para cada nivel de curso
-- **lvl-X_assign-Y**: Ramas hijas para cada asignación específica.
+2. **Color de Fondo Aleatorio:**
+   - Utiliza un arreglo de 15 colores para generar gradientes aleatorios.
+   - Al hacer clic en cualquier parte de la página, el fondo cambia a un gradiente lineal de 5 colores aleatorios.
+   - Utiliza `Math.random()` para seleccionar colores.
 
-### 📁 Ejemplo de nomenclatura de ramas:
-- `lvl-1` → Rama base para el Nivel 1
-  - `lvl-1_assign-1` → Primera asignación del Nivel 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Rama base para el Nivel 2
-  - `lvl-2_assign-1`, etc.
+3. **Ventana Emergente de Inicio de Sesión:**
+   - Al hacer clic en "Iniciar Sesión" en la barra de navegación, se abre una nueva ventana.
+   - La ventana muestra un formulario de inicio de sesión con botones para "Cerrar" y "Redireccionar".
+   - La ventana emergente ocupa una cuarta parte de la pantalla, independientemente del dispositivo.
 
----
-
-### 🧠 Propósito
-
-Organizar los ejercicios por nivel y asignación para mantener la base de código limpia, accesible y bien documentada. Esto también ayuda con futuras revisiones o contribuciones.
-
----
-
-### 📌 Notas
-
-- Cada asignación está documentada con su propio README dentro de su rama.
-- Las ramas se crean desde su base de nivel respectiva (`lvl-X`) para mantener un flujo de trabajo limpio.
+4. **Gestión de Eventos:**
+   - Utiliza `stopPropagation()` para evitar que los clics en elementos hijos activen eventos en elementos padres.
+   - Garantiza que solo se dispare el evento esperado.
 
 ---
 
-### 🚀 Cómo Contribuir
-
-1. Crea una nueva rama desde el nivel apropiado.
-2. Sigue la convención de nombres: `lvl-X_assign-Y`.
-3. Sube tu código y documentación.
-4. (Opcional) Abre un Pull Request si deseas fusionarlo con la rama base del nivel.
+### 📝 Notas Adicionales
+- La ventana emergente de inicio de sesión se ajusta automáticamente al tamaño de la pantalla.
+- El fondo aleatorio mejora la experiencia visual mediante gradientes lineales.
+- La interacción del usuario está validada para evitar acciones no deseadas.
