@@ -1,52 +1,30 @@
-# Repositorio de Práctica de JavaScript
+# ⏳ Asignación 3 - Nivel 2: Spinner de Carga y Mensaje de Bienvenida
 
-Este repositorio contiene mi progreso estructurado a través de 4 niveles de dificultad. Cada nivel incluye 4 asignaciones diseñadas para fortalecer las habilidades prácticas de JavaScript.
+### 📂 Archivos Principales
+- [`Desaf3-js2/spinner.js`](Desaf3-js2/spinner.js)
+- [`Desaf3-js2/welcome.js`](Desaf3-js2/welcome.js)
 
----
-
-### ✅ Estado Actual
-> 🔗 Aquí están las URLs directas a las ramas base de cada nivel y las ramas de las asignaciones específicas
-
-| Nivel | Asignación 1 | Asignación 2 | Asignación 3 | Asignación 4 |
-|-------|---------------|---------------|---------------|---------------|
-| [lvl-1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-1/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-2/README.es.md)             | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-3/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-4/README.es.md) |
-| lvl-2 | ✅             | ✅             | ✅             | ✅             |
-| lvl-3 | ✅             | ✅             | ✅             | ✅             |
-| lvl-4 | ☐             | ☐             | ☐             | ☐             |
+Este proyecto muestra un spinner de carga mientras la página se está cargando y muestra un mensaje de bienvenida al ingresar el nombre del usuario.
 
 ---
 
-### 🌟 Estructura del Repositorio
+### Funcionalidad Implementada
+1. **Spinner de Carga:**
+   - Utiliza el evento `DOMContentLoaded` para llamar a `addSpinner()` y mostrar el spinner.
+   - Una vez que la página está completamente cargada, el evento `window.onload` llama a `quitSpinner()` para ocultarlo.
 
-- **main**: Rama principal del repositorio.
-- **lvl-1 a lvl-4**: Ramas base para cada nivel de curso
-- **lvl-X_assign-Y**: Ramas hijas para cada asignación específica.
+2. **Funciones de Control del Spinner:**
+   - `addSpinner()`: Cambia el estilo del spinner a `flex`.
+   - `quitSpinner()`: Cambia el estilo del spinner a `none`.
 
-### 📁 Ejemplo de nomenclatura de ramas:
-- `lvl-1` → Rama base para el Nivel 1
-  - `lvl-1_assign-1` → Primera asignación del Nivel 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Rama base para el Nivel 2
-  - `lvl-2_assign-1`, etc.
-
----
-
-### 🧠 Propósito
-
-Organizar los ejercicios por nivel y asignación para mantener la base de código limpia, accesible y bien documentada. Esto también ayuda con futuras revisiones o contribuciones.
+3. **Mensaje de Bienvenida al Usuario:**
+   - Captura el nombre del usuario desde el campo de entrada.
+   - Valida que el campo no esté vacío antes de mostrar el mensaje.
+   - Utiliza un listener en el botón "Enviar" para mostrar el saludo.
 
 ---
 
-### 📌 Notas
-
-- Cada asignación está documentada con su propio README dentro de su rama.
-- Las ramas se crean desde su base de nivel respectiva (`lvl-X`) para mantener un flujo de trabajo limpio.
-
----
-
-### 🚀 Cómo Contribuir
-
-1. Crea una nueva rama desde el nivel apropiado.
-2. Sigue la convención de nombres: `lvl-X_assign-Y`.
-3. Sube tu código y documentación.
-4. (Opcional) Abre un Pull Request si deseas fusionarlo con la rama base del nivel.
+### 📝 Notas Adicionales
+- El spinner mejora la experiencia del usuario indicando que la página está cargando.
+- El mensaje de bienvenida solo se muestra si el campo contiene texto, evitando mensajes innecesarios.
+- El uso combinado de `DOMContentLoaded` y `window.onload` garantiza el momento adecuado para mostrar y ocultar el spinner.
