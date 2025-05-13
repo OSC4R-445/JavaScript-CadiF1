@@ -57,18 +57,14 @@ let datas = document.getElementById("datas");
 let busqueda = document.getElementById("busqueda");
 let ne = document.getElementById("noEncontrado");
 ne.classList.add('oculto');
-//REQUERIMIENTO 1
+
+//REQUERIMIENTO 1: Añadir eventos de clic a los botones
 document.getElementById("add1").addEventListener("click", crearElementos);
 document.getElementById("btnAdd").addEventListener("click", agregarExistentes);
 
-
-//FIN REQUERIMIENTO 1
-
-//ESTOS SON LOS MODULOS
+//FUNCIÓN PARA CREAR ELEMENTOS DINÁMICOS (Requerimiento 2)
 function crearElementos() {
   console.log('llamado crearElementos');
-  //REQUERIMIENTO 2
-  //Establecer funcion arrow
   data.forEach((e) => {
     let titulo = document.createElement('h2');
     let personaje = document.createElement('h4');
@@ -79,64 +75,52 @@ function crearElementos() {
     datas.appendChild(titulo);
     datas.appendChild(personaje);
     datas.appendChild(cita);
-  })
+  });
 }
 
-//convertir en una funcion anonima que se ejecuta dentro la funcion agregarExistentes()
-function verificarQueExiste(){
-  if(document.s1.buscar.value != ""){
-    //REQUERIMIENTO 3
-    //establecer funcion anonima
-    data.some(function(e) {
-      if(e.quote.includes(document.s1.buscar.value) || e.character.includes(document.s1.buscar.value) || e.anime.includes(document.s1.buscar.value)){
-        console.log('encontrado');
-        //PARTE DEL REQUERIMIENTO 4
-        ne.classList.add('oculto'); // Ocultar el mensaje "no encontrado"
-
-
-        return true
-      }else{
-        console.log('no encontrado');
-        //PARTE DEL REQUERIMIENTO 4
-        ne.classList.remove('oculto'); // Mostrar el mensaje "no encontrado"
-
-
-        return false
-      }
-    });
-  };
-}
-
-function agregarExistentes() {
-  //REQUERIMIENTO 4
-  const verificarQueExiste = function() {
+// FUNCIÓN PARA VERIFICAR SI EXISTE (Requerimiento 4)
+// ERROR: La lógica no siempre muestra/oculta correctamente el mensaje "No Encontrado"
+const verificarQueExiste = function() {
+  if (document.s1.buscar.value != "") {
+    //FUNCIÓN ANÓNIMA PARA BUSCAR
     return data.some(function(e) {
-      if (e.quote.includes(document.s1.buscar.value) || e.character.includes(document.s1.buscar.value) || e.anime.includes(document.s1.buscar.value)) {
-        ne.classList.add('oculto'); // Ocultar el mensaje "no encontrado"
+      if (e.quote.includes(document.s1.buscar.value) || 
+          e.character.includes(document.s1.buscar.value) || 
+          e.anime.includes(document.s1.buscar.value)) {
+        console.log('encontrado');
+        ne.classList.add('oculto'); // Se espera ocultar el mensaje
         return true;
       } else {
-        ne.classList.remove('oculto'); // Mostrar el mensaje "no encontrado"
+        console.log('no encontrado');
+        ne.classList.remove('oculto'); // Se espera mostrar el mensaje
         return false;
       }
     });
   };
-  
-  // Llamar a verificarQueExiste en agregarExistentes
+}
+
+// FUNCIÓN PARA AGREGAR ELEMENTOS EXISTENTES
+function agregarExistentes() {
+  // Verificar si el elemento existe en la lista
   if (verificarQueExiste()) {
     console.log('Dato encontrado');
   } else {
     console.log('Dato no encontrado');
   }
-  //FIN REQUERIMIENTO 4
   busqueda.innerHTML = "";
   console.log('llamado agregarExistentes');
-  //REQUERIMIENTO 5
-  if(document.s1.buscar.value != ""){
-    //establecer funcion arrow
-    let result = data.filter((e) => e.quote.includes(document.s1.buscar.value) || e.character.includes(document.s1.buscar.value) || e.anime.includes(document.s1.buscar.value));
+
+  // ERROR: El filtro no siempre devuelve los resultados esperados
+  if (document.s1.buscar.value != "") {
+    let result = data.filter((e) => 
+      e.quote.includes(document.s1.buscar.value) || 
+      e.character.includes(document.s1.buscar.value) || 
+      e.anime.includes(document.s1.buscar.value)
+    );
     console.log(result);
-    //establecer funcion arrow
-    result.forEach((e) =>{
+
+    // CREACIÓN DE ELEMENTOS PARA LOS RESULTADOS
+    result.forEach((e) => {
       let titulo = document.createElement('h2');
       let personaje = document.createElement('h4');
       let cita = document.createElement('p');
