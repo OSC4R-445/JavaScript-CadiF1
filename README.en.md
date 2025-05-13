@@ -1,4 +1,4 @@
-# 💡 Assignment 4 - Level 2: Dynamic HTML Elements and Search Functionality
+# 🎌 Assignment 4 - Level 2: Dynamic HTML Elements and Search Functionality
 
 ### 📂 Main File
 - [`Desaf4-js2/desafio.js`](Desaf4-js2/desafio.js)
