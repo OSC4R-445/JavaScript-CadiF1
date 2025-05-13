@@ -1,39 +1,40 @@
-# 🎌 Anime Quotes Finder
+# 💡 Asignación 4 - Nivel 2: Elementos HTML Dinámicos y Funcionalidad de Búsqueda
 
-Aplicación web para buscar frases de anime con filtrado por:
-- Nombre del anime
-- Personaje
-- Frase (quote)
+### 📂 Archivo Principal
+- [`Desaf4-js2/desafio.js`](Desaf4-js2/desafio.js)
 
----
-
-### ✨ Características
-- Muestra todas las frases disponibles
-- Busqueda dinámica en tiempo real
-- Visualización de resultados filtrados
-- Mensaje cuando no se encuentran resultados
+Este proyecto crea elementos HTML de forma dinámica y permite filtrar elementos según la entrada del usuario, usando datos de un arreglo predefinido con citas de anime.
 
 ---
 
-### ✅ Requerimientos Implementados
-1. Event listeners para botones
-2. Creación dinámica de elementos con arrow functions
-3. Búsqueda con método `some()`
-4. Función anónima para verificación
-5. Filtrado con `filter()` y creación de resultados
+### Funcionalidad Implementada
+1. **Creación Dinámica de Elementos:**
+   - Utiliza la función `crearElementos` para generar elementos HTML (título, personaje, cita) para cada objeto en el arreglo de datos.
+   - Los elementos creados se añaden al contenedor principal.
+
+2. **Función de Búsqueda de Citas:**
+   - Emplea una función anónima para verificar si existe una cita en el arreglo de datos.
+   - Si se encuentra la cita, el mensaje "No Encontrado" se oculta; de lo contrario, se muestra.
+
+3. **Asociación de Eventos:**
+   - Utiliza `addEventListener` para vincular eventos de clic a los botones correspondientes.
+
+4. **Manejo de Errores:**
+   - Evita el procesamiento de datos inválidos y muestra un mensaje de "No Encontrado" cuando es necesario.
 
 ---
 
-### 🚀 Cómo Usar
-1. Clona el repositorio
-2. Abre `index.html` en tu navegador
-3. Usa los botones:
-   - "Mostrar Todos" para ver todas las frases
-   - "Buscar" para filtrar por texto
+### 📝 Problemas Conocidos
+- **Problema en el Requerimiento 4:**  
+  - El mensaje **"No Encontrado"** a veces se muestra aunque el dato esté presente.  
+  - El problema surge porque el método `some()` devuelve `true` al primer elemento coincidente, pero el mensaje no siempre se actualiza correctamente.  
+
+- **Problema en el Requerimiento 5:**  
+  - La función `filter()` no siempre genera el arreglo correcto de elementos coincidentes.  
+  - Esto puede deberse a problemas en la lógica de comparación o en el manejo del campo de búsqueda.  
 
 ---
 
-### 📝 Mejoras Pendientes
-- [ ] Mejorar la función de verificación para evitar duplicados
-- [ ] Añadir animaciones al mostrar/ocultar resultados
-- [ ] Implementar búsqueda por categorías
+### 📝 Notas Adicionales
+- El proyecto implementa funciones flecha y funciones anónimas para mejorar la legibilidad y modularidad del código.
+- Utiliza renderizado condicional para mostrar los resultados o un mensaje cuando no se encuentran coincidencias.
