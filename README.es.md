@@ -1,52 +1,43 @@
-# Repositorio de Prácticas JavaScript
+# 🧾 Asignación 1 - Nivel 3: Sistema de Registro de Compras
 
-Este repositorio contiene mi progreso estructurado en 4 niveles de dificultad. Cada nivel tiene 4 asignaciones diseñadas para desarrollar habilidades prácticas en JavaScript.
-
----
-
-## 🌟 Estructura del Repositorio
-
-- **main**: Rama principal del repositorio.
-- **lvl-1 a lvl-4**: Ramas base por nivel de dificultad.
-- **lvl-X_assign-Y**: Ramas hijas para cada asignación individual.
-
-### 📁 Ejemplo de nombres de ramas:
-- `lvl-1` → Rama base del Nivel 1
-  - `lvl-1_assign-1` → Primera asignación del Nivel 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Rama base del Nivel 2
-  - `lvl-2_assign-1`, etc.
+### 📂 Archivos Principales
+- [`Desaf1-js3/index.html`](Desaf1-js3/index.html)
+- [`Desaf1-js3/main.js`](Desaf1-js3/main.js)
 
 ---
 
-## 🧠 Objetivo
-
-Organizar las prácticas por nivel y asignación para mantener el código limpio, accesible y bien documentado. Esto también facilita futuras revisiones o contribuciones.
-
----
-
-## ✅ Estado actual
-
-| Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
-|-------|---------------|---------------|---------------|---------------|
-| lvl-1 | ✅            | ✅            | ✅            | ✅            |
-| lvl-2 | ✅            | ✅            | ✅            | ✅            |
-| lvl-3 | ✅            | ✅            | ✅            | ✅            |
-| lvl-4 | ☐            | ☐            | ☐             | ☐             |
-
+### 🧩 Descripción
+Este proyecto implementa un sistema de registro de clientes y ventas de productos utilizando JavaScript y Bootstrap.
 
 ---
 
-## 📌 Notas
+### 🛠️ Funcionalidad Implementada
 
-- Cada asignación está documentada con un README propio dentro de su rama.
-- Las ramas se crean a partir de su respectiva rama de nivel (`lvl-X`) para mantener un flujo de trabajo limpio.
+1. **Registro de Clientes**
+   - Captura datos como cédula, nombre, teléfono y dirección.
+   - Agrega cada cliente como un elemento `<li>` a una lista.
+   - Permite eliminar un cliente mediante doble clic con confirmación.
+
+2. **Registro de Productos Vendidos**
+   - Captura datos como código, descripción, precio y cantidad.
+   - Agrega una nueva fila en una tabla con la información del producto vendido.
+   - Permite eliminar un producto con doble clic en cualquier celda, con confirmación.
+
+3. **Limpieza de Campos**
+   - Todos los formularios se limpian automáticamente después de registrar la información.
+
+4. **Validación Simple**
+   - Incluye confirmaciones para eliminar registros.
 
 ---
 
-## 🚀 Cómo contribuir
+### 📌 Notas Adicionales
 
-1. Crea una nueva rama desde el nivel correspondiente.
-2. Usa la convención: `lvl-X_assign-Y`.
-3. Sube tu código y documentación.
-4. (Opcional) Haz un Pull Request si deseas integrarlo a la rama base de nivel.
+- Usa Bootstrap 5 para los estilos y la disposición en columnas.
+- El sistema no almacena los datos de forma permanente (no hay backend).
+- Los datos ingresados se manejan solo en el DOM y se reflejan visualmente.
+
+---
+
+### ✅ Completado
+Este desafío ha sido implementado y probado completamente.
