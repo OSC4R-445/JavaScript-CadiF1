@@ -1,52 +1,43 @@
-# JavaScript Practice Repository
+# 🧾 Assignment 1 - Level 3: Purchase Registration System
 
-This repository contains my structured progress across 4 levels of difficulty. Each level includes 4 assignments designed to strengthen practical JavaScript skills.
-
----
-
-## 🌟 Repository Structure
-
-- **main**: Main branch of the repository.
-- **lvl-1 to lvl-4**: Base branches for each difficulty level.
-- **lvl-X_assign-Y**: Child branches for each specific assignment.
-
-### 📁 Example branch naming:
-- `lvl-1` → Base branch for Level 1
-  - `lvl-1_assign-1` → First assignment of Level 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Base branch for Level 2
-  - `lvl-2_assign-1`, etc.
+### 📂 Main Files
+- [`Desaf1-js3/index.html`](Desaf1-js3/index.html)
+- [`Desaf1-js3/main.js`](Desaf1-js3/main.js)
 
 ---
 
-## 🧠 Purpose
-
-Organize exercises by level and assignment to keep the codebase clean, accessible, and well-documented. This also helps with future reviews or contributions.
-
----
-
-## ✅ Current Status
-
-| Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
-|-------|---------------|---------------|---------------|---------------|
-| lvl-1 | ✅            | ✅            | ✅            | ✅            |
-| lvl-2 | ✅            | ✅            | ✅            | ✅            |
-| lvl-3 | ✅            | ✅            | ✅            | ✅            |
-| lvl-4 | ☐            | ☐            | ☐             | ☐             |
-
+### 🧩 Description
+This project implements a client and product sales registration system using JavaScript and Bootstrap.
 
 ---
 
-## 📌 Notes
+### 🛠️ Implemented Functionality
 
-- Each assignment is documented with its own README inside its branch.
-- Branches are created from their respective level base (`lvl-X`) to maintain a clean workflow.
+1. **Client Registration**
+   - Captures data such as ID, name, phone number, and address.
+   - Adds each client as a `<li>` element in a list.
+   - Allows removing a client via double-click with confirmation.
+
+2. **Product Sales Registration**
+   - Captures product code, description, price, and quantity.
+   - Adds a new row to a table with the registered product details.
+   - Allows removing a product via double-click on any table cell, with confirmation.
+
+3. **Field Clearing**
+   - All input fields are cleared after submission.
+
+4. **Basic Validation**
+   - Confirmations are shown before removing entries.
 
 ---
 
-## 🚀 How to Contribute
+### 📌 Additional Notes
 
-1. Create a new branch from the appropriate level.
-2. Follow the naming convention: `lvl-X_assign-Y`.
-3. Upload your code and documentation.
-4. (Optional) Open a Pull Request if you'd like to merge it into the level base branch.
+- Uses Bootstrap 5 for layout and styling.
+- No backend is used; all data is handled and displayed via the DOM.
+- The data is not persistent between sessions.
+
+---
+
+### ✅ Completed
+This assignment has been fully implemented and tested.
