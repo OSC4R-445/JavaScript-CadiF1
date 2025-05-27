@@ -12,7 +12,7 @@ Este desafío aplica conceptos de **Programación Orientada a Objetos (POO)** ut
 
 ### 🛠️ Funcionalidad Implementada
 
-1. **Clase `Usuario`**
+1. **Clase `User` (Usuario)**
    - Atributos: `nombre`, `correo`, `status`, `tipoDeUsuario`, `score`.
    - El constructor recibe todos los atributos excepto `score`.
    - Métodos:
@@ -20,7 +20,7 @@ Este desafío aplica conceptos de **Programación Orientada a Objetos (POO)** ut
      - `updScore(operación, valor)`: actualiza el score según la operación: `+`, `-`, `*`, `/`.
      - `getInfo()`: retorna un objeto con la información del usuario.
 
-2. **Clase `Juego`**
+2. **Clase `Game` (juego)**
    - Atributos: `tipoDeJuego`, `nombre`, `nroDeNiveles`, `nroDeJugadores`.
    - El constructor inicializa todos los atributos.
    - Método:
