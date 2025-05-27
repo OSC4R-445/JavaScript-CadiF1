@@ -1,4 +1,4 @@
-# 🧠 Assignment 1 - Level 4: Object-Oriented Programming in JavaScript
+# 🧾 Assignment 1 - Level 4: Object-Oriented Programming in JavaScript
 
 ### 📂 Main File
 - [`Desaf1-JS4/js/main.js`](Desaf1-JS4/js/main.js)
