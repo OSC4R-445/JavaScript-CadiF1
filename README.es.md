@@ -1,52 +1,47 @@
-# Repositorio de Práctica de JavaScript
+# 🧠 Asignación 1 - Nivel 4: Programación Orientada a Objetos
 
-Este repositorio contiene mi progreso estructurado a través de 4 niveles de dificultad. Cada nivel incluye 4 asignaciones diseñadas para fortalecer las habilidades prácticas de JavaScript.
-
----
-
-### ✅ Estado Actual
-> 🔗 Aquí están las URLs directas a las ramas base de cada nivel y las ramas de las asignaciones específicas
-
-| Nivel | Asignación 1 | Asignación 2 | Asignación 3 | Asignación 4 |
-|-------|---------------|---------------|---------------|---------------|
-| [lvl-1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-1/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-2/README.es.md)             | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-3/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-4/README.es.md) |
-| lvl-2 | ✅             | ✅             | ✅             | ✅             |
-| lvl-3 | ✅             | ✅             | ✅             | ✅             |
-| lvl-4 | ☐             | ☐             | ☐             | ☐             |
+### 📂 Archivo Principal
+- [`lvl-4_assign-1/main.js`](lvl-4_assign-1/main.js)
 
 ---
 
-### 🌟 Estructura del Repositorio
-
-- **main**: Rama principal del repositorio.
-- **lvl-1 a lvl-4**: Ramas base para cada nivel de curso
-- **lvl-X_assign-Y**: Ramas hijas para cada asignación específica.
-
-### 📁 Ejemplo de nomenclatura de ramas:
-- `lvl-1` → Rama base para el Nivel 1
-  - `lvl-1_assign-1` → Primera asignación del Nivel 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Rama base para el Nivel 2
-  - `lvl-2_assign-1`, etc.
+### 📌 Descripción
+Este desafío aplica conceptos de **Programación Orientada a Objetos (POO)** utilizando clases en JavaScript para simular un sistema de usuarios y juegos.
 
 ---
 
-### 🧠 Propósito
+### 🛠️ Funcionalidad Implementada
 
-Organizar los ejercicios por nivel y asignación para mantener la base de código limpia, accesible y bien documentada. Esto también ayuda con futuras revisiones o contribuciones.
+1. **Clase `Usuario`**
+   - Atributos: `nombre`, `correo`, `status`, `tipoDeUsuario`, `score`.
+   - El constructor recibe todos los atributos excepto `score`.
+   - Métodos:
+     - `initScore(valor)`: inicializa el score.
+     - `updScore(operación, valor)`: actualiza el score según la operación: `+`, `-`, `*`, `/`.
+     - `getInfo()`: retorna un objeto con la información del usuario.
+
+2. **Clase `Juego`**
+   - Atributos: `tipoDeJuego`, `nombre`, `nroDeNiveles`, `nroDeJugadores`.
+   - El constructor inicializa todos los atributos.
+   - Método:
+     - `getInfo()`: retorna un objeto con la información del juego.
 
 ---
 
-### 📌 Notas
+### 💡 Ejemplo de uso
 
-- Cada asignación está documentada con su propio README dentro de su rama.
-- Las ramas se crean desde su base de nivel respectiva (`lvl-X`) para mantener un flujo de trabajo limpio.
+```js
+let e = new User("frog", "@", "Activo", "admin")
+e.getInfo()
+// {name: 'frog', mail: '@', status: 'Activo', score: undefined, typeOfUser: 'admin'}
 
----
+e.initScore(2)
+e.getInfo()
+// {name: 'frog', mail: '@', status: 'Activo', score: 2, typeOfUser: 'admin'}
 
-### 🚀 Cómo Contribuir
+e.updScore("+", 5)
+// 7
 
-1. Crea una nueva rama desde el nivel apropiado.
-2. Sigue la convención de nombres: `lvl-X_assign-Y`.
-3. Sube tu código y documentación.
-4. (Opcional) Abre un Pull Request si deseas fusionarlo con la rama base del nivel.
+let g = new Game("Frogger", "Arcade", 10, 1)
+g.getInfo()
+// {name: 'Frogger', gameType: 'Arcade', levelCount: 10, playerCount: 1}
