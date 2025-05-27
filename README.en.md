@@ -28,7 +28,7 @@ This assignment demonstrates **Object-Oriented Programming (OOP)** in JavaScript
 
 ---
 
-### 💡 Example Usage
+### 💡 Usage Example
 
 ```js
 let e = new User("frog", "@", "Active", "admin")
