@@ -1,7 +1,7 @@
 # 🧠 Asignación 1 - Nivel 4: Programación Orientada a Objetos
 
 ### 📂 Archivo Principal
-- [`lvl-4_assign-1/main.js`](lvl-4_assign-1/main.js)
+- [`Desaf1-JS4/js/main.js`](Desaf1-JS4/js/main.js)
 
 ---
 
