@@ -1,54 +1,47 @@
-# JavaScript Practice Repository
+# 🔐 Asignación 3 - Nivel 4: Autenticación con JavaScript y SweetAlert2
 
-This repository contains my structured progress across 4 levels of difficulty. Each level includes 4 assignments designed to strengthen practical JavaScript skills.
-
----
-
-### ✅ Current Status
-> 🔗 Here are the direct URLs to the base branches for each level and the specific assignment branches
-
-| Level | Assignment 1 | Assignment 2 | Assignment 3 | Assignment 4 |
-|-------|---------------|---------------|---------------|---------------|
-| [lvl-1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1/README.en.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-1/README.en.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-2/README.en.md)             | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-3/README.en.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-4/README.en.md) |
-| lvl-2 | ✅             | ✅             | ✅             | ✅             |
-| lvl-3 | ✅             | ✅             | ✅             | ✅             |
-| lvl-4 | ☐             | ☐             | ☐             | ☐             |
+### 📂 Archivos Principales
+- [`lvl-4_assign-3/index.html`](lvl-4_assign-3/index.html)
+- [`lvl-4_assign-3/desafio3_js4.js`](lvl-4_assign-3/desafio3_js4.js)
 
 ---
 
-### 🌟 Repository Structure
-
-- **main**: Main branch of the repository.
-- **lvl-1 to lvl-4**: Base branches for each difficulty level.
-- **lvl-X_assign-Y**: Child branches for each specific assignment.
-
-### 📁 Example branch naming:
-- `lvl-1` → Base branch for Level 1
-  - `lvl-1_assign-1` → First assignment of Level 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Base branch for Level 2
-  - `lvl-2_assign-1`, etc.
+### 📌 Descripción
+Este proyecto implementa un sistema de **autenticación simple** con JavaScript que permite:
+- Registro de usuarios.
+- Inicio y cierre de sesión.
+- Manejo de sesiones con almacenamiento local (`localStorage`).
+- Alertas y confirmaciones interactivas con **SweetAlert2**.
+- Control de inactividad y cierre automático tras 15 segundos sin interacción.
 
 ---
 
-### 🧠 Purpose
+### 🛠️ Funcionalidad Implementada
 
-Organize exercises by level and assignment to keep the codebase clean, accessible, and well-documented. This also helps with future reviews or contributions.
+1. **Modal de Registro e Inicio de Sesión**
+   - Registro con nombre, usuario, correo y contraseña.
+   - Inicio de sesión validando usuario y contraseña.
+   - Validación contra datos existentes en `localStorage`.
+
+2. **Gestión de Usuarios**
+   - Datos iniciales precargados si no hay usuarios registrados.
+   - Al registrarse, se guarda el nuevo usuario en `localStorage`.
+
+3. **Persistencia de Sesión**
+   - Si un usuario ya está logueado, se mantiene la sesión activa.
+   - Mensaje de bienvenida personalizado.
+
+4. **Control de Inactividad**
+   - A los 10 segundos de inactividad, aparece una alerta de confirmación.
+   - Si no hay respuesta en 10 segundos, se cierra la sesión automáticamente.
+   - Cualquier interacción reinicia el temporizador.
+
+5. **Cierre de Sesión**
+   - Manual desde el botón "Cerrar sesión".
+   - Automático por inactividad o cancelación de la alerta.
 
 ---
 
-### 📌 Notes
-
-- Each assignment is documented with its own README inside its branch.
-- Branches are created from their respective level base (`lvl-X`) to maintain a clean workflow.
-
----
-
-### 🚀 How to Contribute
-
-1. Create a new branch from the appropriate level.
-2. Follow the naming convention: `lvl-X_assign-Y`.
-3. Upload your code and documentation.
-4. (Optional) Open a Pull Request if you'd like to merge it into the level base branch.
-
----
+### 💡 Notas
+- Se utiliza `localStorage` para simular una base de datos persistente en el navegador.
+- SweetAlert2 mejora la experiencia del usuario en cada interacción.
