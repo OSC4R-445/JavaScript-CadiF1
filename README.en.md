@@ -34,11 +34,11 @@ This project implements a **simple authentication system** using vanilla JavaScr
 4. **Inactivity Timeout**
    - For a new login/signup:
       * User logs in/signs up.
-      * 10 seconds later, a prompt (without a timer) appears.>
+      * 10 seconds later, a prompt (without a timer) appears.
       
    - For an already logged-in user on page load:
       * Page loads, user is detected as logged in.
-      * 10 seconds later, a prompt (without a timer) appears.>
+      * 10 seconds later, a prompt (without a timer) appears.
 >
    - User confirms, and then the 15-second inactivity timer begins.
    - After 15 seconds of inactivity, a timed confirmation prompt is shown.
