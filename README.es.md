@@ -32,7 +32,7 @@ Este proyecto implementa un sistema de **autenticación simple** con JavaScript 
    - Mensaje de bienvenida personalizado.
 
 4. **Control de Inactividad**
-   - A los 10 segundos de inactividad, aparece una alerta de confirmación.
+   - A los 15 segundos de inactividad, aparece una alerta de confirmación.
    - Si no hay respuesta en 10 segundos, se cierra la sesión automáticamente.
    - Cualquier interacción reinicia el temporizador.
 
