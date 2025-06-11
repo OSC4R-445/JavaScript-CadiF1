@@ -39,7 +39,7 @@ This project implements a **simple authentication system** using vanilla JavaScr
    - For an already logged-in user on page load:
       * Page loads, user is detected as logged in.
       * 10 seconds later, a prompt (without a timer) appears.
->
+
    - User confirms, and then the 15-second inactivity timer begins.
    - After 15 seconds of inactivity, a timed confirmation prompt is shown.
    - If the user does not respond in 10 seconds, session is closed automatically.
