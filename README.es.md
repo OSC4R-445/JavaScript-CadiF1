@@ -1,52 +1,47 @@
-# Repositorio de Práctica de JavaScript
+# 🔐 Asignación 3 - Nivel 4: Autenticación con JavaScript y SweetAlert2
 
-Este repositorio contiene mi progreso estructurado a través de 4 niveles de dificultad. Cada nivel incluye 4 asignaciones diseñadas para fortalecer las habilidades prácticas de JavaScript.
-
----
-
-### ✅ Estado Actual
-> 🔗 Aquí están las URLs directas a las ramas base de cada nivel y las ramas de las asignaciones específicas
-
-| Nivel | Asignación 1 | Asignación 2 | Asignación 3 | Asignación 4 |
-|-------|---------------|---------------|---------------|---------------|
-| [lvl-1](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-1/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-2/README.es.md)             | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-3/README.es.md) | [✅](https://github.com/OSC4R-445/JavaScript-CadiF1/blob/lvl-1_assign-4/README.es.md) |
-| lvl-2 | ✅             | ✅             | ✅             | ✅             |
-| lvl-3 | ✅             | ✅             | ✅             | ✅             |
-| lvl-4 | ☐             | ☐             | ☐             | ☐             |
+### 📂 Archivos Principales
+- [`Desaf3-JS4/index.html`](Desaf3-JS4/index.html)
+- [`Desaf3-JS4/desafio3_js4.js`](Desaf3-JS4/desafio3_js4.js)
 
 ---
 
-### 🌟 Estructura del Repositorio
-
-- **main**: Rama principal del repositorio.
-- **lvl-1 a lvl-4**: Ramas base para cada nivel de curso
-- **lvl-X_assign-Y**: Ramas hijas para cada asignación específica.
-
-### 📁 Ejemplo de nomenclatura de ramas:
-- `lvl-1` → Rama base para el Nivel 1
-  - `lvl-1_assign-1` → Primera asignación del Nivel 1
-  - `lvl-1_assign-2`, etc.
-- `lvl-2` → Rama base para el Nivel 2
-  - `lvl-2_assign-1`, etc.
+### 📌 Descripción
+Este proyecto implementa un sistema de **autenticación simple** con JavaScript que permite:
+- Registro de usuarios.
+- Inicio y cierre de sesión.
+- Manejo de sesiones con almacenamiento local (`localStorage`).
+- Alertas y confirmaciones interactivas con **SweetAlert2**.
+- Control de inactividad y cierre automático tras 15 segundos sin interacción.
 
 ---
 
-### 🧠 Propósito
+### 🛠️ Funcionalidad Implementada
 
-Organizar los ejercicios por nivel y asignación para mantener la base de código limpia, accesible y bien documentada. Esto también ayuda con futuras revisiones o contribuciones.
+1. **Modal de Registro e Inicio de Sesión**
+   - Registro con nombre, usuario, correo y contraseña.
+   - Inicio de sesión validando usuario y contraseña.
+   - Validación contra datos existentes en `localStorage`.
+
+2. **Gestión de Usuarios**
+   - Datos iniciales precargados si no hay usuarios registrados.
+   - Al registrarse, se guarda el nuevo usuario en `localStorage`.
+
+3. **Persistencia de Sesión**
+   - Si un usuario ya está logueado, se mantiene la sesión activa.
+   - Mensaje de bienvenida personalizado.
+
+4. **Control de Inactividad**
+   - A los 10 segundos de inactividad, aparece una alerta de confirmación.
+   - Si no hay respuesta en 10 segundos, se cierra la sesión automáticamente.
+   - Cualquier interacción reinicia el temporizador.
+
+5. **Cierre de Sesión**
+   - Manual desde el botón "Cerrar sesión".
+   - Automático por inactividad o cancelación de la alerta.
 
 ---
 
-### 📌 Notas
-
-- Cada asignación está documentada con su propio README dentro de su rama.
-- Las ramas se crean desde su base de nivel respectiva (`lvl-X`) para mantener un flujo de trabajo limpio.
-
----
-
-### 🚀 Cómo Contribuir
-
-1. Crea una nueva rama desde el nivel apropiado.
-2. Sigue la convención de nombres: `lvl-X_assign-Y`.
-3. Sube tu código y documentación.
-4. (Opcional) Abre un Pull Request si deseas fusionarlo con la rama base del nivel.
+### 💡 Notas
+- Se utiliza `localStorage` para simular una base de datos persistente en el navegador.
+- SweetAlert2 mejora la experiencia del usuario en cada interacción.
