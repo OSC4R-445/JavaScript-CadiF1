@@ -1,8 +1,8 @@
 # 🔐 Asignación 3 - Nivel 4: Autenticación con JavaScript y SweetAlert2
 
 ### 📂 Archivos Principales
-- [`lvl-4_assign-3/index.html`](lvl-4_assign-3/index.html)
-- [`lvl-4_assign-3/desafio3_js4.js`](lvl-4_assign-3/desafio3_js4.js)
+- [`Desaf3-JS4/index.html`](Desaf3-JS4/index.html)
+- [`Desaf3-JS4/desafio3_js4.js`](Desaf3-JS4/desafio3_js4.js)
 
 ---
 
