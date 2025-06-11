@@ -32,9 +32,17 @@ Este proyecto implementa un sistema de **autenticación simple** con JavaScript 
    - Mensaje de bienvenida personalizado.
 
 4. **Control de Inactividad**
-   - A los 15 segundos de inactividad, aparece una alerta de confirmación.
-   - Si no hay respuesta en 10 segundos, se cierra la sesión automáticamente.
-   - Cualquier interacción reinicia el temporizador.
+   - Para nuevo login/sinup:
+      * El usuario inicia sesion / se registra.
+      * 10 segundos después, un prompt (sin timer) aparece.
+   - Para un usuario ya loggeado:
+      * La pagína carga, el usuario es detectado como logged in.
+      * 10 segundos después, un prompt (sin timer) aparece.
+
+   - El usuario confirma, entonces el timer de 15 segundos de inactividad inicia.
+   - Después de los 15 segundos de inactiviad, un prompt con timer se muestra.
+   - Si el usuario no responde en 10 segundos, la sesión se cierra automaticamente.
+   - Cualquier interacción reinicia el timer de 15 segundos pero no el de 10 segundos.
 
 5. **Cierre de Sesión**
    - Manual desde el botón "Cerrar sesión".
