@@ -32,11 +32,20 @@ This project implements a **simple authentication system** using vanilla JavaScr
    - Displays a personalized welcome message.
 
 4. **Inactivity Timeout**
-   - After 15 seconds of inactivity, a confirmation prompt is shown.
+   - For a new login/signup:
+      * User logs in/signs up.
+      * 10 seconds later, a prompt (without) appears.
+      
+   - For an already logged-in user on page load:
+      * Page loads, user is detected as logged in.
+      * 10 seconds later, a prompt (without a timer) appears.
+        
+   - User confirms, and then the 15-second inactivity timer begins.
+   - After 15 seconds of inactivity, a timed confirmation prompt is shown.
    - If the user does not respond in 10 seconds, session is closed automatically.
-   - Any interaction resets the inactivity timer.
+   - Any interaction resets the 15 sec inactivity timer, not the 10 seconds one.
 
-5. **Logout Functionality**
+6. **Logout Functionality**
    - Manual via "Logout" button.
    - Automatic after inactivity or alert cancellation.
 
