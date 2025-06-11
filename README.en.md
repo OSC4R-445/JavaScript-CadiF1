@@ -1,47 +1,47 @@
-# 🔐 Asignación 3 - Nivel 4: Autenticación con JavaScript y SweetAlert2
+# 🔐 Assignment 3 - Level 4: JavaScript Authentication with SweetAlert2
 
-### 📂 Archivos Principales
+### 📂 Main Files
 - [`Desaf3-JS4/index.html`](Desaf3-JS4/index.html)
 - [`Desaf3-JS4/desafio3_js4.js`](Desaf3-JS4/desafio3_js4.js)
 
 ---
 
-### 📌 Descripción
-Este proyecto implementa un sistema de **autenticación simple** con JavaScript que permite:
-- Registro de usuarios.
-- Inicio y cierre de sesión.
-- Manejo de sesiones con almacenamiento local (`localStorage`).
-- Alertas y confirmaciones interactivas con **SweetAlert2**.
-- Control de inactividad y cierre automático tras 15 segundos sin interacción.
+### 📌 Description
+This project implements a **simple authentication system** using vanilla JavaScript that allows:
+- User registration.
+- Login and logout.
+- Session persistence via `localStorage`.
+- Interactive dialogs with **SweetAlert2**.
+- Inactivity timeout with auto-logout after 15 seconds.
 
 ---
 
-### 🛠️ Funcionalidad Implementada
+### 🛠️ Features Implemented
 
-1. **Modal de Registro e Inicio de Sesión**
-   - Registro con nombre, usuario, correo y contraseña.
-   - Inicio de sesión validando usuario y contraseña.
-   - Validación contra datos existentes en `localStorage`.
+1. **Login and Registration Modals**
+   - Register with name, username, email, and password.
+   - Login with username and password validation.
+   - Prevents duplicate usernames or emails.
 
-2. **Gestión de Usuarios**
-   - Datos iniciales precargados si no hay usuarios registrados.
-   - Al registrarse, se guarda el nuevo usuario en `localStorage`.
+2. **User Management**
+   - Initial user data is loaded if `localStorage` is empty.
+   - New users are saved directly to `localStorage`.
 
-3. **Persistencia de Sesión**
-   - Si un usuario ya está logueado, se mantiene la sesión activa.
-   - Mensaje de bienvenida personalizado.
+3. **Session Persistence**
+   - Keeps users logged in across page reloads.
+   - Displays a personalized welcome message.
 
-4. **Control de Inactividad**
-   - A los 10 segundos de inactividad, aparece una alerta de confirmación.
-   - Si no hay respuesta en 10 segundos, se cierra la sesión automáticamente.
-   - Cualquier interacción reinicia el temporizador.
+4. **Inactivity Timeout**
+   - After 15 seconds of inactivity, a confirmation prompt is shown.
+   - If the user does not respond in 10 seconds, session is closed automatically.
+   - Any interaction resets the inactivity timer.
 
-5. **Cierre de Sesión**
-   - Manual desde el botón "Cerrar sesión".
-   - Automático por inactividad o cancelación de la alerta.
+5. **Logout Functionality**
+   - Manual via "Logout" button.
+   - Automatic after inactivity or alert cancellation.
 
 ---
 
-### 💡 Notas
-- Se utiliza `localStorage` para simular una base de datos persistente en el navegador.
-- SweetAlert2 mejora la experiencia del usuario en cada interacción.
+### 💡 Notes
+- Uses `localStorage` as a mock persistent user database.
+- SweetAlert2 provides a smooth and responsive user interaction experience.
