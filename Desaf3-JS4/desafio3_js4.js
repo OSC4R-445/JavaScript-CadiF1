@@ -1,3 +1,5 @@
+// app.js (Unified JavaScript file for your application)
+
 // Initial user data (load from LS or use default)
 var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [
     { "id": 1, "password": "123456", "name": "Leanne Graham", "username": "Bret", "email": "Sincere@april.biz", "address": { "street": "Kulas Light", "suite": "Apt. 556", "city": "Gwenborough", "zipcode": "92998-3874", "geo": { "lat": "-37.3159", "lng": "81.1496" } }, "phone": "1-770-736-8031 x56442", "website": "hildegard.org", "company": { "name": "Romaguera-Crona", "catchPhrase": "Multi-layered client-server neural-net", "bs": "harness real-time e-markets" } },
@@ -29,7 +31,7 @@ const registerMsg = $('registerMessage');
 const welcomeMessageElement = $('welcomeMessage');
 
 // --- Session Management Timers ---
-let inactivityTimer; // Timer for the 15-second inactivity check
+let inactivityTimer; // Timer for the 15-second inactivity check (Req 4)
 let isSweetAlertOpen = false; // Flag to prevent multiple SweetAlerts
 
 
@@ -81,8 +83,9 @@ const closeModal = modal => {
 
 // --- Session Timeout Functions ---
 
-// Function to handle logout
+// Function to handle logout (reusable for Req 3 & 5)
 const performLogout = (message = 'Has cerrado tu sesión exitosamente.') => {
+    console.log("Performing logout:", message);
     localStorage.removeItem('usuarioLogueado');
     localStorage.removeItem('registeredUserOnSession'); // Clear this on logout as well
     updateUI();
@@ -92,23 +95,34 @@ const performLogout = (message = 'Has cerrado tu sesión exitosamente.') => {
     Swal.fire('¡Sesión Cerrada!', message, 'info');
 };
 
-// Function to reset and (re)start the 15-second inactivity timer
+// Function to reset and (re)start the 15-second inactivity timer (Req 4)
 const resetInactivityTimer = () => {
+    console.log("resetInactivityTimer called.");
+    console.log("Current user logged in:", localStorage.getItem('usuarioLogueado') ? "Yes" : "No");
+    console.log("Is SweetAlert open:", isSweetAlertOpen);
+
     // Only manage timer if a user is logged in AND no SweetAlert is currently prompting
     if (localStorage.getItem('usuarioLogueado') && !isSweetAlertOpen) {
         clearTimeout(inactivityTimer); // Clear any existing timer
+        console.log("Cleared existing inactivity timer.");
         inactivityTimer = setTimeout(showInactivityPrompt, 15000); // 15 seconds
+        console.log("New 15-second inactivity timer set. Timer ID:", inactivityTimer);
+    } else {
+        console.log("Did not set new 15-second inactivity timer due to conditions.");
     }
 };
 
-// Function to show the SweetAlert for inactivity
+// Function to show the SweetAlert for inactivity (Req 4 & 5)
 const showInactivityPrompt = () => {
+    console.log("showInactivityPrompt called.");
     // Do not show if not logged in or if SweetAlert is already open
     if (!localStorage.getItem('usuarioLogueado') || isSweetAlertOpen) {
+        console.log("showInactivityPrompt aborted: not logged in or alert already open.");
         return;
     }
 
     isSweetAlertOpen = true; // Set flag to indicate SweetAlert is open
+    console.log("isSweetAlertOpen set to true by showInactivityPrompt.");
 
     let timerInterval; // Local interval for this specific SweetAlert countdown
     Swal.fire({
@@ -118,11 +132,11 @@ const showInactivityPrompt = () => {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Sí, continuar', // This button should now be visible
+        confirmButtonText: 'Sí, continuar',
         cancelButtonText: 'No, cerrar sesión',
         allowOutsideClick: false, // Prevent closing by clicking outside
         allowEscapeKey: false,    // Prevent closing by pressing Escape
-        timer: 10000, // Total time for the countdown
+        timer: 10000, // Total time for the countdown (10 seconds)
         timerProgressBar: true,
         didOpen: () => {
             const b = Swal.getHtmlContainer().querySelector('#countdown');
@@ -132,14 +146,17 @@ const showInactivityPrompt = () => {
                     b.textContent = remainingTime;
                 }
             }, 100); // Update frequently for smoother countdown
+            console.log("Inactivity prompt opened, countdown started.");
         },
         willClose: () => {
             clearInterval(timerInterval); // Clean up the interval
             isSweetAlertOpen = false; // Reset flag when SweetAlert closes
+            console.log("Inactivity prompt closed, isSweetAlertOpen set to false.");
         }
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire('¡Sesión Continuada!', 'Tu sesión sigue activa.', 'success');
+            console.log("User confirmed inactivity prompt. Resetting inactivity timer.");
             resetInactivityTimer(); // Restart the inactivity timer after user confirms
         } else if (result.dismiss === Swal.DismissReason.cancel) {
             performLogout('Has decidido cerrar tu sesión.');
@@ -152,12 +169,15 @@ const showInactivityPrompt = () => {
 
 // Function to show the initial 10-second prompt (Req 2)
 const showInitialSessionPrompt = () => {
-    // Only show if a user is logged in AND no SweetAlert is currently prompting
+    console.log("showInitialSessionPrompt called.");
+    // Do not show if not logged in or if SweetAlert is already open
     if (!localStorage.getItem('usuarioLogueado') || isSweetAlertOpen) {
+        console.log("showInitialSessionPrompt aborted: not logged in or alert already open.");
         return;
     }
 
     isSweetAlertOpen = true; // Set flag to indicate SweetAlert is open
+    console.log("isSweetAlertOpen set to true by showInitialSessionPrompt.");
 
     Swal.fire({
         title: '¿Continuar Sesión?',
@@ -166,20 +186,24 @@ const showInitialSessionPrompt = () => {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Sí, continuar', // This button is crucial for making sure the user can stay logged in after the countdown starts
+        confirmButtonText: 'Sí, continuar',
         cancelButtonText: 'No, cerrar sesión',
         allowOutsideClick: false,
         allowEscapeKey: false,
-        willClose: () => {
+        // No 'timer' property here for Req 2, as per requirement
+        willClose: () => { // Keep willClose as it resets the flag
             isSweetAlertOpen = false; // Reset flag when SweetAlert closes
+            console.log("Initial prompt closed, isSweetAlertOpen set to false.");
         }
     }).then((result) => {
         if (result.isConfirmed) {
             // User chose to continue after initial prompt (Req 2 positive)
             Swal.fire('¡Sesión Continuada!', 'Tu sesión sigue activa.', 'success');
-            resetInactivityTimer(); // NOW, start the 15-second inactivity timer
+            console.log("User confirmed initial prompt. Starting 15-second inactivity timer.");
+            // NOW, and only NOW, start the 15-second inactivity timer (Req 4)
+            resetInactivityTimer();
         } else if (result.dismiss === Swal.DismissReason.cancel) {
-            // User chose to close session
+            // User chose to close session (Req 2 negative -> Req 3)
             performLogout('Has cerrado tu sesión.');
         }
     });
@@ -188,47 +212,28 @@ const showInitialSessionPrompt = () => {
 
 // --- Main DOM Content Loaded Listener ---
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOMContentLoaded fired.");
 
     // --- Initial UI Updates ---
     updateUI();
     updateWelcomeMessage();
 
-    // --- Handle persistence for newly registered users ---
-    const registeredUserInLS = localStorage.getItem('registeredUserOnSession');
-    if (registeredUserInLS) {
-        try {
-            const user = JSON.parse(registeredUserInLS);
-            if (!usuarios.some(u => u.id === user.id)) {
-                usuarios.push(user);
-                localStorage.setItem('usuarios', JSON.stringify(usuarios));
-            }
-            Swal.fire({
-                title: '¡Registro Exitoso!',
-                text: `¡Bienvenido, ${user.username}! Tu cuenta ha sido registrada.`,
-                icon: 'success',
-                timer: 3000,
-                showConfirmButton: false
-            });
-            localStorage.removeItem('registeredUserOnSession');
-        } catch (e) {
-            console.error("Error parsing registered user from localStorage:", e);
-            localStorage.removeItem('registeredUserOnSession');
-        }
-    }
-
-    // --- Initial 10-second prompt for session continuation ---
-    // This is the first prompt after the page loads.
+    // --- Schedule the initial 10-second prompt (Req 2) if user is already logged in on page load ---
     const currentUser = localStorage.getItem('usuarioLogueado');
     if (currentUser) {
-        setTimeout(showInitialSessionPrompt, 10000); // Call the dedicated initial prompt function
+        console.log("User is logged in on page load. Scheduling initial session prompt (Req 2) in 10 seconds.");
+        setTimeout(showInitialSessionPrompt, 10000);
+    } else {
+        console.log("No user logged in. Initial prompt will not show until login/signup.");
     }
 
-
-    // --- Event Listeners for User Activity ---
-    // Listen for any click on the body to reset the inactivity timer
+    // --- Event Listeners for User Activity (Req 4) ---
+    // These listeners will only trigger resetInactivityTimer, which itself only starts
+    // the 15-second timer IF a user is logged in AND the Req 2 prompt has been confirmed.
     document.body.addEventListener('click', resetInactivityTimer);
-    document.body.addEventListener('mousemove', resetInactivityTimer); // Also reset on mouse movement
-    document.body.addEventListener('keypress', resetInactivityTimer); // Also reset on keypress
+    document.body.addEventListener('mousemove', resetInactivityTimer);
+    document.body.addEventListener('keypress', resetInactivityTimer);
+    console.log("Activity event listeners added to body. These will manage Req 4 timer after Req 2 confirmation.");
 
 
     // --- Event Listeners for Modals & Forms ---
@@ -261,7 +266,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateUI();
                 updateWelcomeMessage();
                 Swal.fire('¡Éxito!', `¡Bienvenido de nuevo, ${userFound.username}!`, 'success');
-                resetInactivityTimer(); // Start inactivity timer after successful login
+                console.log("Successful login. Scheduling initial session prompt (Req 2) in 10 seconds.");
+                // Immediately after successful login, schedule Req 2 prompt
+                setTimeout(showInitialSessionPrompt, 10000);
             }, 500);
         } else {
             loginMsg.textContent = 'Nombre de usuario o contraseña inválidos.';
@@ -288,7 +295,6 @@ document.addEventListener('DOMContentLoaded', () => {
         usuarios.push(newUser);
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
         localStorage.setItem('usuarioLogueado', JSON.stringify(newUser));
-        localStorage.setItem('registeredUserOnSession', JSON.stringify(newUser));
 
         registerMsg.textContent = '¡Registro exitoso!';
         registerMsg.style.color = 'green';
@@ -296,8 +302,16 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal(registerModal);
             updateUI();
             updateWelcomeMessage();
-            // The registration success SweetAlert is now handled by the initial DOMContentLoaded check
-            resetInactivityTimer(); // Start inactivity timer after successful registration
+            Swal.fire({
+                title: '¡Registro Exitoso!',
+                text: `¡Bienvenido, ${newUser.username}! Tu cuenta ha sido registrada.`,
+                icon: 'success',
+                timer: 3000,
+                showConfirmButton: false
+            });
+            console.log("Successful registration. Scheduling initial session prompt (Req 2) in 10 seconds.");
+            // Immediately after successful registration, schedule Req 2 prompt
+            setTimeout(showInitialSessionPrompt, 10000);
         }, 500);
     });
 
