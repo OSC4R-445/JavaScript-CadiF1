@@ -1,0 +1,153 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* --- Estilos de las Celdas (Cartas) --- */
+.table td {
+    width: 25%;
+    height: 120px; /* Altura fija para cada "carta" */
+    cursor: pointer;
+    position: relative; /* Necesario para posicionar el pseudoelemento ::before */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    padding: 5px; /* Padding interno para que la imagen no toque los bordes */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+
+    text-align: center; /* Centra el contenido horizontalmente (para inline/inline-block) */
+    vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+/* Estilo para las imágenes dentro de las celdas */
+.table td img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Clase para las "cartas" cuando están ocultas (mostrando el reverso) */
+.card-hidden {
+    background-color: #007bff;
+}
+.card-hidden img {
+    opacity: 0;
+    transform: scale(0.8);
+}
+.card-hidden::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/card-black.png'); /* Ruta relativa a styles.css */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+/* Clase para las "cartas" reveladas (cuando se giran) */
+.card-revealed {
+    background-color: #ffffff;
+}
+.card-revealed img {
+    opacity: 1;
+    transform: scale(1);
+}
+.card-revealed::before {
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Clase para las "cartas" que ya han sido emparejadas */
+.card-matched {
+    background-color: #28a745;
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.8;
+}
+.card-matched img {
+    opacity: 1;
+}
+.card-matched::before {
+    opacity: 0;
+}
+
+/* Efectos Hover */
+.table td:hover:not(.card-matched) {
+    background-color: #e2e6ea;
+}
+.table td.card-hidden:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+/* --- Nuevos Estilos para el UI del Juego --- */
+.game-controls {
+    margin-bottom: 20px;
+}
+
+.game-stats p {
+    margin-bottom: 5px;
+}
+
+.game-message {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    min-height: 50px; /* Para evitar que el layout salte mucho */
+    display: flex; /* Para centrar el texto dentro del mensaje */
+    justify-content: center;
+    align-items: center;
+}
+
+.game-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.game-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.game-message.win {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+    font-size: 1.5em;
+    padding: 20px;
+}
