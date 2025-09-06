@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuarios de ReqRes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Usuarios de la API de ReqRes</h1>
+    <div style="text-align: center">
+      <img id="loading_indicator" src="gear.gif" alt="Cargando..." />
+    </div>
+    <div
+      id="error-message-container"
+      style="display: none; text-align: center; color: red; margin-top: 20px"
+    >
+      <h3>Ha ocurrido un error.</h3>
+      <p id="error-text"></p>
+    </div>
+    <div id="page1-container" class="user-container"></div>
+    <button id="load-users-btn">Cargar Segunda Página</button>
+    <div id="page2-container"></div>
+    <button id="load-user10-btn">Cargar Usuario ID 10</button>
+    <div id="user10-container"></div>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
