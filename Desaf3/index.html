@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CADI F1 - Carreras y Cursos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CADI F1</h1>
+    <div style="text-align: center">
+      <img id="loading_indicator" src="gear.gif" alt="Cargando..." />
+    </div>
+    <div
+      id="error-message-container"
+      style="display: none; text-align: center; color: red; margin-top: 20px"
+    >
+      <h3>Ha ocurrido un error.</h3>
+      <p id="error-text"></p>
+    </div>
+    <div id="page1-container" class="area-container"></div>
+    <div id="carreras-container"></div>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

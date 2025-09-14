@@ -1,0 +1,198 @@
+#loading_indicator {
+  display: none; /* vista por defecto */
+  margin: 20px auto;
+}
+
+.areas-titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.areas-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.area-item {
+  margin-top: 2rem; /* Solo margen arriba, ajusta el valor a tu gusto */
+  margin-bottom: 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f6f6f6;
+  margin-top: 1.2rem; /* Ajusta el espacio entre áreas */
+}
+
+.area-nombre {
+  font-size: 1.3rem;
+}
+
+.area-descripcion {
+  font-size: 1.1rem;
+}
+
+.area-cursos-ficha {
+  background: #eaf6ff;
+  border-left: 4px solid #2196f3;
+  margin: 0 0 0 1rem; /* Sin margen arriba ni abajo, solo a la izquierda */
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+}
+
+.cursos-titulo {
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  color: #1976d2;
+}
+
+.cursos-lista {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.curso-item {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.cursos-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.curso-card {
+  background: #fff;
+  border: 1px solid #b3d7f6;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.07);
+  padding: 1rem 1.2rem;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.curso-card-titulo {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 0.5rem;
+}
+
+.curso-card-objetivo {
+  font-size: 0.98rem;
+  color: #333;
+}
+
+/* --- INICIO DE CAMBIOS --- */
+
+.curso-niveles-ficha {
+  /* Estilos eliminados para que no tenga fondo ni borde propio */
+  margin: 1rem 0 0 0; /* Margen superior para separar del contenido principal de la card */
+  padding: 0;
+}
+
+.niveles-titulo {
+  font-size: 1.08rem;
+  color: #333; /* Color de texto neutral */
+  margin-bottom: 0.7rem;
+}
+
+.niveles-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nivel-card {
+  background: #fff; /* Fondo blanco, igual al padre */
+  border: 1px solid #f0f0f0; /* Borde gris muy claro para sutil separación */
+  border-radius: 7px;
+  box-shadow: none; /* Sin sombra */
+  padding: 0.8rem 1rem;
+  width: 100%; /* Ocupa todo el ancho disponible dentro del contenedor */
+  flex: 1 1 100%;
+  margin-bottom: 0.5rem;
+}
+
+.nivel-card-titulo {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555; /* Color de texto neutral */
+  margin-bottom: 0.4rem;
+}
+
+.nivel-card-objetivo,
+.nivel-card-precio {
+  font-size: 0.97rem;
+  margin-bottom: 0.2rem;
+}
+/* --- FIN DE CAMBIOS --- */
+
+/* --- ESTILOS PARA CARRERAS --- */
+
+.carreras-titulo {
+  font-size: 2rem;
+  margin-top: 2rem; /* Espacio extra arriba */
+  margin-bottom: 1.5rem;
+}
+
+.carreras-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.carrera-item {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f6f6f6;
+  margin-top: 1.2rem;
+  border: 1px solid #eee;
+}
+
+.carrera-nombre {
+  font-size: 1.3rem;
+}
+
+.carrera-descripcion {
+  font-size: 1.1rem;
+}
+
+/* --- ESTILOS PARA DETALLE DE CARRERA --- */
+
+.carrera-detalle-ficha {
+  background: #f0f0f0; /* Un color neutral diferente */
+  border-left: 4px solid #607d8b; /* Un color sobrio */
+  margin: 0 0 0 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+}
+
+.pensum-titulo {
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  color: #455a64;
+}
+
+.periodo-titulo {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #37474f;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pensum-lista {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.pensum-item {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
