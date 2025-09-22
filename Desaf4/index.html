@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD Application</title>
+  </head>
+  <body>
+    <h1>Object Management</h1>
+
+    <div id="userTableContainer">
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- User data -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="form-container">
+      <h2>Add New Object</h2>
+      <form id="addUserForm">
+        <div>
+          <label for="userName">Name:</label>
+          <input type="text" id="userName" name="name" required>
+        </div>
+        <button type="submit">Add Object</button>
+      </form>
+    </div>
+
+    <div class="form-container" id="editUserForm">
+      <h2>Edit Object</h2>
+      <form id="updateUserForm">
+        <div>
+          <label for="editUserId">ID:</label>
+          <input type="text" id="editUserId" name="id" readonly>
+        </div>
+        <div>
+          <label for="editUserName">Name:</label>
+          <input type="text" id="editUserName" name="name" required>
+        </div>
+        <button type="submit" id="updateUserBtn">Update Object</button>
+        <button type="button" id="cancelEditBtn">Cancel</button>
+      </form>
+    </div>
+
+    <script src="./jquery-3.7.0.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
